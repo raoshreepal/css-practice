@@ -1,8 +1,9 @@
-<!-- PRACTICAL 17: TABLE DESIGN -->
+﻿<!-- PRACTICAL 17: TABLE DESIGN -->
 <!DOCTYPE html>
 <html lang="en">
 <head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Practical 17 - Table Design</title><link rel="stylesheet" href="style.css"></head>
+    <title>Practical 17 - Table Design</title><link rel="stylesheet" href="style.css">    <link rel="stylesheet" href="../code-viewer.css" data-code-viewer-asset>
+</head>
 <body>
     <header class="header"><h1>Sales Report</h1></header>
     <section class="table-wrapper">
@@ -19,6 +20,27 @@
             </tbody>
         </table>
     </section>
-    <footer class="footer"><p>&copy; 2024 | Practical 17: Table Design</p></footer>
+    <footer class="footer"><p>&copy; 2024 | Practical 17: Table Design</p></footer><template data-code-source="css" hidden>
+/* PRACTICAL 17: TABLE DESIGN */
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:'Segoe UI',sans-serif;background:#f5f5f5}
+.header{background:linear-gradient(135deg,#667eea 0%,#764ba2 100%);color:white;padding:50px 20px;text-align:center}
+.header h1{font-size:2.5rem}
+.table-wrapper{max-width:900px;margin:50px auto;padding:0 20px;background:white;border-radius:12px;overflow:hidden;box-shadow:0 4px 15px rgba(0,0,0,0.1)}
+.data-table{width:100%;border-collapse:collapse}
+.data-table thead{background:linear-gradient(135deg,#667eea 0%,#764ba2 100%);color:white}
+.data-table th{padding:15px;text-align:left;font-weight:700}
+.data-table td{padding:15px;border-bottom:1px solid #e0e0e0}
+.data-table tbody tr{transition:0.3s}
+.data-table tbody tr:hover{background:#f9f9f9}
+.data-table tbody tr:nth-child(even){background:#f5f5f5}
+.footer{background:linear-gradient(135deg,#667eea 0%,#764ba2 100%);color:white;padding:30px 20px;text-align:center;margin-top:40px}
+@media(max-width:480px){.table-wrapper{margin:20px auto}.data-table th,.data-table td{padding:10px;font-size:0.9rem}}
+
+</template>
+
+    <script src="../code-viewer.js" data-code-viewer-asset defer></script>
 </body>
 </html>
+
+

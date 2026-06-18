@@ -1,18 +1,19 @@
-<!-- PRACTICAL 11: CONTACT SECTION -->
+﻿<!-- PRACTICAL 11: CONTACT SECTION -->
 <!DOCTYPE html>
 <html lang="en">
 <head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Practical 11 - Contact Section</title><link rel="stylesheet" href="style.css"></head>
+    <title>Practical 11 - Contact Section</title><link rel="stylesheet" href="style.css">    <link rel="stylesheet" href="../code-viewer.css" data-code-viewer-asset>
+</head>
 <body>
     <header class="header"><h1>Contact Us</h1><p>We'd love to hear from you</p></header>
     <section class="contact-wrapper">
         <article class="contact-info">
             <h2>Get in Touch</h2>
             <div class="info-items">
-                <div class="info-item"><h3>📍 Address</h3><p>123 Main St, City, Country 12345</p></div>
-                <div class="info-item"><h3>📞 Phone</h3><p>+1 (555) 123-4567</p></div>
-                <div class="info-item"><h3>✉️ Email</h3><p>info@company.com</p></div>
-                <div class="info-item"><h3>🕐 Hours</h3><p>Mon-Fri: 9AM-6PM EST</p></div>
+                <div class="info-item"><h3>Address</h3><p>123 Main St, City, Country 12345</p></div>
+                <div class="info-item"><h3>Phone</h3><p>+1 (555) 123-4567</p></div>
+                <div class="info-item"><h3>Email</h3><p>info@company.com</p></div>
+                <div class="info-item"><h3>Hours</h3><p>Mon-Fri: 9AM-6PM EST</p></div>
             </div>
         </article>
         <form class="contact-form">
@@ -35,6 +36,47 @@
             <button type="submit" class="submit-btn">Send Message</button>
         </form>
     </section>
-    <footer class="footer"><p>&copy; 2024 | Practical 11: Contact Section</p></footer>
+    <footer class="footer"><p>&copy; 2024 | Practical 11: Contact Section</p></footer><template data-code-source="css" hidden>
+/* PRACTICAL 11: CONTACT SECTION */
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:'Segoe UI',sans-serif;background:#f5f5f5}
+
+.header{background:linear-gradient(135deg,#667eea 0%,#764ba2 100%);color:white;padding:50px 20px;text-align:center}
+.header h1{font-size:2.5rem;margin-bottom:10px}
+.header p{font-size:1.1rem;opacity:0.9}
+
+.contact-wrapper{max-width:1000px;margin:40px auto;padding:0 20px;display:grid;grid-template-columns:1fr 1fr;gap:40px}
+
+.contact-info{background:white;padding:30px;border-radius:12px;box-shadow:0 4px 15px rgba(0,0,0,0.1)}
+.contact-info h2{color:#667eea;margin-bottom:25px;font-size:1.8rem}
+
+.info-items{display:flex;flex-direction:column;gap:20px}
+.info-item{padding:15px;background:#f9f9f9;border-left:4px solid #667eea;border-radius:4px}
+.info-item h3{color:#333;margin-bottom:8px;font-size:1.1rem}
+.info-item p{color:#666}
+
+.contact-form{background:white;padding:30px;border-radius:12px;box-shadow:0 4px 15px rgba(0,0,0,0.1)}
+
+.form-group{margin-bottom:20px}
+.form-group label{display:block;margin-bottom:8px;font-weight:600;color:#333}
+.form-group input,
+.form-group textarea{width:100%;padding:12px;border:2px solid #e0e0e0;border-radius:6px;font-family:inherit;transition:0.3s}
+.form-group input:focus,
+.form-group textarea:focus{outline:none;border-color:#667eea;box-shadow:0 0 0 3px rgba(102,126,234,0.1)}
+
+.submit-btn{width:100%;padding:12px;background:linear-gradient(135deg,#667eea 0%,#764ba2 100%);color:white;border:none;border-radius:6px;font-weight:700;cursor:pointer;transition:0.3s;text-transform:uppercase}
+.submit-btn:hover{transform:translateY(-2px);box-shadow:0 4px 12px rgba(102,126,234,0.3)}
+
+.footer{background:linear-gradient(135deg,#667eea 0%,#764ba2 100%);color:white;padding:30px 20px;text-align:center;margin-top:40px}
+
+@media(max-width:768px){.contact-wrapper{grid-template-columns:1fr}.contact-info{order:2}.contact-form{order:1}}
+@media(max-width:480px){.header{padding:30px 15px}.contact-wrapper{padding:0 10px;margin:20px auto}}
+
+</template>
+
+    <script src="../code-viewer.js" data-code-viewer-asset defer></script>
 </body>
 </html>
+
+
+

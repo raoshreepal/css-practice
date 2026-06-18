@@ -1,4 +1,4 @@
-<!-- 
+﻿<!-- 
     PRACTICAL 4: HERO SECTION DESIGN
     Topics: Background, Height, Width, Display, Padding, Text Properties
     Difficulty: Beginner+
@@ -14,6 +14,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Practical 4 - Hero Section</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../code-viewer.css" data-code-viewer-asset>
 </head>
 
 <body>
@@ -179,31 +180,31 @@
             <div class="question-item">
                 <h4 class="question-number">Question 1</h4>
                 <p class="question-text">How do you make a hero section that takes up the full viewport height?</p>
-                <p class="question-hint">💡 Hint: Use height: 100vh and display: flex</p>
+                <p class="question-hint">Hint: Use height: 100vh and display: flex</p>
             </div>
 
             <div class="question-item">
                 <h4 class="question-number">Question 2</h4>
                 <p class="question-text">What is a CSS gradient and how do you create one? Give examples of linear and radial.</p>
-                <p class="question-hint">💡 Hint: linear-gradient and radial-gradient functions</p>
+                <p class="question-hint">Hint: linear-gradient and radial-gradient functions</p>
             </div>
 
             <div class="question-item">
                 <h4 class="question-number">Question 3</h4>
                 <p class="question-text">How would you center content both horizontally and vertically in a hero section?</p>
-                <p class="question-hint">💡 Hint: Use flexbox with justify-content and align-items</p>
+                <p class="question-hint">Hint: Use flexbox with justify-content and align-items</p>
             </div>
 
             <div class="question-item">
                 <h4 class="question-number">Question 4</h4>
                 <p class="question-text">Why is it important to ensure good contrast between text and background in hero sections?</p>
-                <p class="question-hint">💡 Hint: Accessibility and readability for all users</p>
+                <p class="question-hint">Hint: Accessibility and readability for all users</p>
             </div>
 
             <div class="question-item">
                 <h4 class="question-number">Question 5</h4>
                 <p class="question-text">How do you make hero section images responsive on mobile devices?</p>
-                <p class="question-hint">💡 Hint: Use max-width, height: auto, and media queries</p>
+                <p class="question-hint">Hint: Use max-width, height: auto, and media queries</p>
             </div>
         </article>
     </section>
@@ -231,7 +232,7 @@
                 </div>
 
                 <div class="bonus-section">
-                    <h4>🌟 Bonus Challenges:</h4>
+                    <h4>Bonus Challenges:</h4>
                     <ul>
                         <li>Add a subtle animation to the heading (fade-in)</li>
                         <li>Create a smooth scroll effect</li>
@@ -283,7 +284,540 @@
     <footer class="page-footer">
         <p>&copy; 2024 CSS Practical Handbook. All rights reserved.</p>
         <p>Practical 4: Hero Section | Topics: Background, Height, Width, Display, Text Properties</p>
-    </footer>
+    </footer><template data-code-source="css" hidden>
+/* PRACTICAL 4: HERO SECTION - CSS */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 16px;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f5f5f5;
+    color: #333;
+}
+
+.page-header {
+    background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+    color: white;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.page-header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+.subtitle {
+    font-size: 1.1rem;
+    color: #ffe0e6;
+}
+
+.page-nav {
+    background-color: #333;
+    padding: 15px 0;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.nav-list {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.nav-list a {
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    padding: 8px 15px;
+    transition: 0.3s ease;
+}
+
+.nav-list a:hover {
+    color: #f5576c;
+}
+
+.main-section {
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+.main-section h2 {
+    font-size: 2rem;
+    color: #f5576c;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.hero-container {
+    margin-bottom: 40px;
+}
+
+/* ========== HERO SECTIONS ========== */
+
+.hero {
+    /* Height */
+    height: 500px;
+    
+    /* Display */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    /* Spacing */
+    padding: 60px 20px;
+    
+    /* Border Radius */
+    border-radius: 12px;
+    
+    /* Positioning context */
+    position: relative;
+    overflow: hidden;
+}
+
+/* Hero Content */
+
+.hero-content {
+    text-align: center;
+    z-index: 2;
+    max-width: 800px;
+}
+
+/* Hero Solid */
+
+.hero-solid {
+    background-color: #2c3e50;
+    color: white;
+}
+
+/* Hero Gradient */
+
+.hero-gradient {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+}
+
+/* Hero Dark */
+
+.hero-dark {
+    background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+    color: white;
+}
+
+/* Hero Two Column */
+
+.hero-two-column {
+    background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+    color: white;
+    height: auto;
+    min-height: 500px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    align-items: center;
+    padding: 80px 40px;
+}
+
+.hero-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.placeholder-image {
+    width: 100%;
+    max-width: 400px;
+    aspect-ratio: 1;
+    background-color: rgba(255, 255, 255, 0.2);
+    border: 2px dashed white;
+    border-radius: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+    color: white;
+}
+
+/* ========== HERO CONTENT STYLING ========== */
+
+.hero-title {
+    font-size: 3.5rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+    line-height: 1.2;
+    letter-spacing: -1px;
+}
+
+.hero-subtitle {
+    font-size: 1.3rem;
+    font-weight: 300;
+    margin-bottom: 30px;
+    opacity: 0.95;
+}
+
+/* ========== HERO BUTTONS ========== */
+
+.hero-button {
+    display: inline-block;
+    padding: 14px 40px;
+    background-color: white;
+    color: #333;
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: 700;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    border: 2px solid white;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.hero-button:hover {
+    background-color: transparent;
+    color: white;
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.hero-button-light {
+    background-color: rgba(255, 255, 255, 0.2);
+    color: white;
+    border: 2px solid white;
+}
+
+.hero-button-light:hover {
+    background-color: white;
+    color: #667eea;
+}
+
+.hero-button-outline {
+    background-color: transparent;
+    color: white;
+    border: 2px solid white;
+    margin-left: 15px;
+}
+
+.hero-button-outline:hover {
+    background-color: white;
+    color: #1a1a2e;
+}
+
+.hero-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+/* ========== EXPLANATION SECTION ========== */
+
+.explanation-section {
+    background-color: white;
+    padding: 40px 20px;
+    margin: 40px 0;
+    border-top: 3px solid #f5576c;
+}
+
+.explanation-section h2 {
+    font-size: 2rem;
+    color: #f5576c;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.explanation-content {
+    max-width: 1000px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+    gap: 20px;
+}
+
+.property-card {
+    background-color: #f9f9f9;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.property-card h3 {
+    color: #f5576c;
+    margin-bottom: 15px;
+    font-size: 1.2rem;
+}
+
+.property-detail p {
+    margin-bottom: 12px;
+    font-size: 0.95rem;
+    color: #555;
+    line-height: 1.6;
+}
+
+.property-detail strong {
+    color: #f5576c;
+}
+
+/* ========== INTERVIEW SECTION ========== */
+
+.interview-section {
+    background-color: #f5f5f5;
+    padding: 40px 20px;
+    margin: 40px 0;
+}
+
+.interview-section h2 {
+    font-size: 2rem;
+    color: #f5576c;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.questions-container {
+    max-width: 900px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: 20px;
+}
+
+.question-item {
+    background-color: white;
+    border-left: 4px solid #f5576c;
+    padding: 20px;
+    border-radius: 4px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.question-number {
+    color: #f5576c;
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+}
+
+.question-text {
+    color: #333;
+    margin-bottom: 12px;
+    font-weight: 500;
+}
+
+.question-hint {
+    color: #666;
+    font-size: 0.9rem;
+    font-style: italic;
+}
+
+/* ========== EXERCISE SECTION ========== */
+
+.exercise-section {
+    background-color: white;
+    padding: 40px 20px;
+    margin: 40px 0;
+    border-top: 3px solid #f5576c;
+}
+
+.exercise-section h2 {
+    font-size: 2rem;
+    color: #f5576c;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.exercise-content {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.exercise-content h3 {
+    color: #f5576c;
+    margin-bottom: 15px;
+    font-size: 1.3rem;
+}
+
+.exercise-box {
+    background-color: #f9f9f9;
+    border: 2px solid #f5576c;
+    border-radius: 8px;
+    padding: 25px;
+}
+
+.requirements-list,
+.bonus-section {
+    margin-bottom: 25px;
+}
+
+.requirements-list h4,
+.bonus-section h4 {
+    color: #f5576c;
+    margin-bottom: 12px;
+    font-size: 1.1rem;
+}
+
+.requirements-list ul,
+.bonus-section ul {
+    list-style-position: inside;
+}
+
+.requirements-list li,
+.bonus-section li {
+    margin-bottom: 8px;
+    color: #555;
+}
+
+/* ========== REAL WORLD SECTION ========== */
+
+.real-world-section {
+    background-color: #f5f5f5;
+    padding: 40px 20px;
+    margin: 40px 0;
+}
+
+.real-world-section h2 {
+    font-size: 2rem;
+    color: #f5576c;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.real-world-content {
+    max-width: 900px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.use-case {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.use-case h3 {
+    color: #f5576c;
+    margin-bottom: 12px;
+    font-size: 1.1rem;
+}
+
+.use-case p {
+    color: #555;
+}
+
+/* ========== FOOTER ========== */
+
+.page-footer {
+    background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+    color: white;
+    padding: 30px 20px;
+    text-align: center;
+    margin-top: 40px;
+}
+
+.page-footer p {
+    margin-bottom: 10px;
+    font-size: 0.95rem;
+}
+
+.page-footer p:last-child {
+    margin-bottom: 0;
+    font-size: 0.9rem;
+    color: #ffe0e6;
+}
+
+/* ========== RESPONSIVE ========== */
+
+@media (max-width: 768px) {
+    .page-header h1 {
+        font-size: 2rem;
+    }
+    
+    .hero {
+        height: 400px;
+        padding: 40px 20px;
+    }
+    
+    .hero-two-column {
+        grid-template-columns: 1fr;
+        padding: 60px 20px;
+    }
+    
+    .hero-title {
+        font-size: 2.5rem;
+    }
+    
+    .hero-subtitle {
+        font-size: 1.1rem;
+    }
+    
+    .explanation-content,
+    .questions-container,
+    .real-world-content {
+        grid-template-columns: 1fr;
+    }
+    
+    .hero-buttons {
+        flex-direction: column;
+    }
+    
+    .hero-button-outline {
+        margin-left: 0;
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        font-size: 14px;
+    }
+    
+    .page-header {
+        padding: 25px 15px;
+    }
+    
+    .main-section {
+        padding: 0 10px;
+    }
+    
+    .hero {
+        height: auto;
+        min-height: 300px;
+        padding: 30px 15px;
+    }
+    
+    .hero-title {
+        font-size: 1.8rem;
+    }
+    
+    .hero-subtitle {
+        font-size: 0.95rem;
+    }
+    
+    .hero-button {
+        padding: 12px 30px;
+        font-size: 0.9rem;
+    }
+}
+
+</template>
+
+    <script src="../code-viewer.js" data-code-viewer-asset defer></script>
 </body>
 
 </html>
+
+
+

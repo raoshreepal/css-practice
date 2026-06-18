@@ -1,26 +1,52 @@
-<!-- PRACTICAL 15: SIDEBAR -->
+﻿<!-- PRACTICAL 15: SIDEBAR -->
 <!DOCTYPE html>
 <html lang="en">
 <head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Practical 15 - Sidebar</title><link rel="stylesheet" href="style.css"></head>
+    <title>Practical 15 - Sidebar</title><link rel="stylesheet" href="style.css">    <link rel="stylesheet" href="../code-viewer.css" data-code-viewer-asset>
+</head>
 <body>
     <nav class="sidebar">
         <div class="sidebar-header">
             <h2>Dashboard</h2>
         </div>
         <ul class="nav-list">
-            <li><a href="#" class="nav-link active">🏠 Home</a></li>
-            <li><a href="#" class="nav-link">📊 Analytics</a></li>
-            <li><a href="#" class="nav-link">👥 Users</a></li>
-            <li><a href="#" class="nav-link">📋 Reports</a></li>
-            <li><a href="#" class="nav-link">⚙️ Settings</a></li>
-            <li><a href="#" class="nav-link">❓ Help</a></li>
+            <li><a href="#" class="nav-link active">Home</a></li>
+            <li><a href="#" class="nav-link">Analytics</a></li>
+            <li><a href="#" class="nav-link">Users</a></li>
+            <li><a href="#" class="nav-link">Reports</a></li>
+            <li><a href="#" class="nav-link">Settings</a></li>
+            <li><a href="#" class="nav-link">Help</a></li>
         </ul>
     </nav>
     <main class="main-content">
         <header class="top-bar"><h1>Welcome to Dashboard</h1></header>
         <section class="content"><p>This is the main content area. The sidebar remains fixed on the left side.</p></section>
     </main>
-    <footer class="footer"><p>&copy; 2024 | Practical 15: Sidebar</p></footer>
+    <footer class="footer"><p>&copy; 2024 | Practical 15: Sidebar</p></footer><template data-code-source="css" hidden>
+/* PRACTICAL 15: SIDEBAR */
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:'Segoe UI',sans-serif;display:flex;height:100vh}
+.sidebar{width:250px;background:linear-gradient(135deg,#667eea 0%,#764ba2 100%);color:white;padding:20px 0;position:fixed;height:100vh;overflow-y:auto}
+.sidebar-header{padding:20px;border-bottom:1px solid rgba(255,255,255,0.2);margin-bottom:20px}
+.sidebar-header h2{font-size:1.5rem}
+.nav-list{list-style:none}
+.nav-link{display:block;padding:15px 20px;color:white;text-decoration:none;transition:0.3s;border-left:3px solid transparent}
+.nav-link:hover{background:rgba(255,255,255,0.1);border-left-color:white}
+.nav-link.active{background:rgba(255,255,255,0.2);border-left-color:white}
+.main-content{margin-left:250px;flex:1;display:flex;flex-direction:column}
+.top-bar{background:white;padding:20px;box-shadow:0 2px 8px rgba(0,0,0,0.1)}
+.top-bar h1{color:#333;font-size:2rem}
+.content{flex:1;padding:30px;background:#f5f5f5;overflow-y:auto}
+.content p{color:#666;font-size:1.1rem;line-height:1.6}
+.footer{background:#333;color:white;padding:20px;text-align:center;margin-left:250px}
+@media(max-width:768px){.sidebar{width:200px}.main-content,.footer{margin-left:200px}}
+@media(max-width:480px){.sidebar{width:100%;height:auto;position:relative;padding:10px 0}.main-content,.footer{margin-left:0}.sidebar-header{padding:10px}.nav-link{padding:10px 15px}.top-bar{padding:15px}.content{padding:15px}}
+
+</template>
+
+    <script src="../code-viewer.js" data-code-viewer-asset defer></script>
 </body>
 </html>
+
+
+

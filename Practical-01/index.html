@@ -1,4 +1,4 @@
-<!-- 
+﻿<!-- 
     PRACTICAL 1: BUSINESS CARD DESIGN
     Topics: CSS Colors, Borders, Padding, Box Shadow, Margin
     Difficulty: Beginner
@@ -14,6 +14,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Practical 1 - Business Card Design</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../code-viewer.css" data-code-viewer-asset>
 </head>
 
 <body>
@@ -215,12 +216,12 @@
                 <div class="property-detail">
                     <p><strong>Mistakes:</strong></p>
                     <ul class="mistakes-list">
-                        <li>❌ Using too many colors in one design (more than 5-6)</li>
-                        <li>❌ Not using box-shadow for depth, making design look flat</li>
-                        <li>❌ Inconsistent padding/margin across similar elements</li>
-                        <li>❌ Using fixed widths that don't work on mobile devices</li>
-                        <li>✅ Use consistent spacing throughout the design</li>
-                        <li>✅ Use a color palette with maximum 3 primary colors</li>
+                        <li>Avoid: Using too many colors in one design (more than 5-6)</li>
+                        <li>Avoid: Not using box-shadow for depth, making design look flat</li>
+                        <li>Avoid: Inconsistent padding/margin across similar elements</li>
+                        <li>Avoid: Using fixed widths that don't work on mobile devices</li>
+                        <li>Do: Use consistent spacing throughout the design</li>
+                        <li>Do: Use a color palette with maximum 3 primary colors</li>
                     </ul>
                 </div>
             </div>
@@ -235,31 +236,31 @@
             <div class="question-item">
                 <h4 class="question-number">Question 1</h4>
                 <p class="question-text">What is the difference between padding and margin? Give a real-world example where you would use each.</p>
-                <p class="question-hint">💡 Hint: Think about the box model - inside vs outside spacing</p>
+                <p class="question-hint">Hint: Think about the box model - inside vs outside spacing</p>
             </div>
 
             <div class="question-item">
                 <h4 class="question-number">Question 2</h4>
                 <p class="question-text">How would you create a business card that works well on both desktop and mobile devices? What CSS property is essential?</p>
-                <p class="question-hint">💡 Hint: Consider using max-width and responsive units</p>
+                <p class="question-hint">Hint: Consider using max-width and responsive units</p>
             </div>
 
             <div class="question-item">
                 <h4 class="question-number">Question 3</h4>
                 <p class="question-text">Explain box-shadow syntax: 0 4px 12px rgba(0, 0, 0, 0.1). What does each value mean?</p>
-                <p class="question-hint">💡 Hint: Think about horizontal offset, vertical offset, blur, and color</p>
+                <p class="question-hint">Hint: Think about horizontal offset, vertical offset, blur, and color</p>
             </div>
 
             <div class="question-item">
                 <h4 class="question-number">Question 4</h4>
                 <p class="question-text">If you need to apply padding of 10px top, 20px right, 10px bottom, 20px left, how would you write it in one line?</p>
-                <p class="question-hint">💡 Hint: Use the 4-value shorthand notation</p>
+                <p class="question-hint">Hint: Use the 4-value shorthand notation</p>
             </div>
 
             <div class="question-item">
                 <h4 class="question-number">Question 5</h4>
                 <p class="question-text">Why is using semantic HTML tags like <article>, <section>, and <header> important alongside CSS styling?</p>
-                <p class="question-hint">💡 Hint: Think about SEO, accessibility, and code maintainability</p>
+                <p class="question-hint">Hint: Think about SEO, accessibility, and code maintainability</p>
             </div>
         </article>
     </section>
@@ -288,7 +289,7 @@
                 </div>
 
                 <div class="bonus-section">
-                    <h4>🌟 Bonus Challenges:</h4>
+                    <h4>Bonus Challenges:</h4>
                     <ul>
                         <li>Create hover effects (the card lifts when you hover over it)</li>
                         <li>Make two different designs and display them side by side</li>
@@ -366,7 +367,647 @@
     <footer class="page-footer">
         <p>&copy; 2024 CSS Practical Handbook. All rights reserved.</p>
         <p>Practical 1: Business Card Design | Topics: Colors, Borders, Padding, Box Shadow, Margin</p>
-    </footer>
+    </footer><template data-code-source="css" hidden>
+/* 
+    PRACTICAL 1: BUSINESS CARD DESIGN - CSS
+    Topics: Colors, Borders, Padding, Box Shadow, Margin, Width, Height
+    
+    This CSS file demonstrates professional styling techniques for creating
+    modern business card designs using only pure CSS properties.
+*/
+
+/* ========================================
+   GLOBAL STYLES
+   ======================================== */
+
+/* Reset browser defaults and apply global styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* HTML root element - sets font size for rem units */
+html {
+    font-size: 16px;
+}
+
+/* Body element - applies base styles to entire page */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f5f5f5;
+    color: #333333;
+    line-height: 1.6;
+}
+
+/* ========================================
+   HEADER SECTION
+   ======================================== */
+
+/* Main page header styling */
+.page-header {
+    background-color: #1e3c72;
+    color: #ffffff;
+    padding: 40px 20px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Main heading in header */
+.page-header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    font-weight: 700;
+}
+
+/* Subtitle text in header */
+.subtitle {
+    font-size: 1.1rem;
+    color: #e0e0e0;
+    font-weight: 300;
+}
+
+/* ========================================
+   NAVIGATION SECTION
+   ======================================== */
+
+/* Navigation bar styling */
+.page-nav {
+    background-color: #2a5298;
+    padding: 15px 0;
+    margin-bottom: 30px;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+/* Unordered list in navigation */
+.nav-list {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+/* Navigation links styling */
+.nav-list a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 600;
+    padding: 8px 15px;
+    transition: all 0.3s ease;
+}
+
+/* Navigation links hover effect */
+.nav-list a:hover {
+    color: #ffd700;
+    text-decoration: underline;
+}
+
+/* ========================================
+   MAIN SECTION & CONTAINER
+   ======================================== */
+
+/* Main content section styling */
+.main-section {
+    max-width: 1000px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+/* Section heading */
+.main-section h2 {
+    font-size: 2rem;
+    color: #1e3c72;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+/* Container for business cards */
+.card-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    margin-bottom: 40px;
+}
+
+/* ========================================
+   BUSINESS CARD STYLING
+   ======================================== */
+
+/* Main business card container */
+.business-card {
+    /* Dimensions */
+    width: 350px;
+    height: auto;
+    
+    /* Background and borders */
+    background-color: #ffffff;
+    border: 2px solid #e0e0e0;
+    border-radius: 8px;
+    
+    /* Spacing */
+    padding: 0;
+    margin: 0;
+    
+    /* Shadow for depth and elevation */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    
+    /* Transitions for smooth effects */
+    transition: all 0.3s ease;
+}
+
+/* Business card hover effect - lifts up on mouse over */
+.business-card:hover {
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+    transform: translateY(-5px);
+}
+
+/* ========================================
+   CARD HEADER
+   ======================================== */
+
+/* Card header section - company branding */
+.card-header {
+    background-color: #1e3c72;
+    color: #ffffff;
+    padding: 20px;
+    border-radius: 6px 6px 0 0;
+}
+
+/* Company name in card header */
+.company-name {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 5px;
+    letter-spacing: 0.5px;
+}
+
+/* Tagline below company name */
+.tagline {
+    font-size: 0.9rem;
+    color: #b0d4ff;
+    font-weight: 300;
+    font-style: italic;
+}
+
+/* ========================================
+   CARD BODY
+   ======================================== */
+
+/* Card body section - main content */
+.card-body {
+    padding: 20px;
+}
+
+/* Contact information section */
+.contact-info {
+    margin-bottom: 20px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+/* Person's name styling */
+.person-name {
+    font-size: 1.25rem;
+    color: #1e3c72;
+    margin-bottom: 5px;
+    font-weight: 700;
+}
+
+/* Person's job title */
+.person-title {
+    font-size: 0.95rem;
+    color: #2a5298;
+    font-weight: 600;
+}
+
+/* Contact details container */
+.contact-details {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+/* Individual detail item (email, phone, website) */
+.detail-item {
+    font-size: 0.9rem;
+    color: #555555;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Label for each detail (Email:, Phone:, etc.) */
+.detail-label {
+    font-weight: 700;
+    color: #1e3c72;
+    font-size: 0.85rem;
+}
+
+/* Value for each detail (actual email, phone, etc.) */
+.detail-value {
+    color: #666666;
+    font-size: 0.9rem;
+}
+
+/* ========================================
+   CARD FOOTER
+   ======================================== */
+
+/* Card footer section - address information */
+.card-footer {
+    background-color: #f8f8f8;
+    padding: 15px 20px;
+    border-top: 1px solid #e0e0e0;
+    border-radius: 0 0 6px 6px;
+}
+
+/* Address text in footer */
+.address {
+    font-size: 0.85rem;
+    color: #666666;
+    line-height: 1.4;
+}
+
+/* ========================================
+   EXPLANATION SECTION
+   ======================================== */
+
+/* Explanation section styling */
+.explanation-section {
+    background-color: #ffffff;
+    padding: 40px 20px;
+    margin: 40px 0;
+    border-top: 3px solid #1e3c72;
+}
+
+/* Explanation section heading */
+.explanation-section h2 {
+    font-size: 2rem;
+    color: #1e3c72;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+/* Explanation content container */
+.explanation-content {
+    max-width: 1000px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+    gap: 20px;
+}
+
+/* Individual property card */
+.property-card {
+    background-color: #f9f9f9;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+/* Property card heading */
+.property-card h3 {
+    color: #1e3c72;
+    margin-bottom: 15px;
+    font-size: 1.2rem;
+}
+
+/* Property detail paragraphs */
+.property-detail p {
+    margin-bottom: 12px;
+    font-size: 0.95rem;
+    color: #555555;
+    line-height: 1.6;
+}
+
+/* Strong text styling */
+.property-detail strong {
+    color: #1e3c72;
+    font-weight: 700;
+}
+
+/* Tips list styling */
+.tips-list,
+.mistakes-list {
+    list-style-position: inside;
+    margin-top: 10px;
+}
+
+/* Tips and mistakes list items */
+.tips-list li,
+.mistakes-list li {
+    margin-bottom: 8px;
+    color: #555555;
+}
+
+/* ========================================
+   INTERVIEW QUESTIONS SECTION
+   ======================================== */
+
+/* Interview section styling */
+.interview-section {
+    background-color: #f5f5f5;
+    padding: 40px 20px;
+    margin: 40px 0;
+}
+
+/* Interview section heading */
+.interview-section h2 {
+    font-size: 2rem;
+    color: #1e3c72;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+/* Questions container */
+.questions-container {
+    max-width: 900px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: 20px;
+}
+
+/* Individual question item */
+.question-item {
+    background-color: #ffffff;
+    border-left: 4px solid #2a5298;
+    padding: 20px;
+    border-radius: 4px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+/* Question number */
+.question-number {
+    color: #2a5298;
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+}
+
+/* Question text */
+.question-text {
+    color: #333333;
+    margin-bottom: 12px;
+    font-weight: 500;
+}
+
+/* Question hint */
+.question-hint {
+    color: #666666;
+    font-size: 0.9rem;
+    font-style: italic;
+}
+
+/* ========================================
+   EXERCISE SECTION
+   ======================================== */
+
+/* Exercise section styling */
+.exercise-section {
+    background-color: #ffffff;
+    padding: 40px 20px;
+    margin: 40px 0;
+    border-top: 3px solid #1e3c72;
+}
+
+/* Exercise section heading */
+.exercise-section h2 {
+    font-size: 2rem;
+    color: #1e3c72;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+/* Exercise content styling */
+.exercise-content {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+/* Exercise heading */
+.exercise-content h3 {
+    color: #1e3c72;
+    margin-bottom: 15px;
+    font-size: 1.3rem;
+}
+
+/* Exercise box styling */
+.exercise-box {
+    background-color: #f9f9f9;
+    border: 2px solid #2a5298;
+    border-radius: 8px;
+    padding: 25px;
+}
+
+/* Requirements, bonus, and output sections */
+.requirements-list,
+.bonus-section,
+.expected-output {
+    margin-bottom: 25px;
+}
+
+/* Section headings in exercise */
+.requirements-list h4,
+.bonus-section h4,
+.expected-output h4 {
+    color: #1e3c72;
+    margin-bottom: 12px;
+    font-size: 1.1rem;
+}
+
+/* Lists in exercise section */
+.requirements-list ul,
+.bonus-section ul,
+.expected-output ul {
+    list-style-position: inside;
+    margin-left: 0;
+}
+
+/* List items */
+.requirements-list li,
+.bonus-section li,
+.expected-output li {
+    margin-bottom: 8px;
+    color: #555555;
+}
+
+/* ========================================
+   REAL WORLD SECTION
+   ======================================== */
+
+/* Real world section styling */
+.real-world-section {
+    background-color: #f5f5f5;
+    padding: 40px 20px;
+    margin: 40px 0;
+}
+
+/* Real world section heading */
+.real-world-section h2 {
+    font-size: 2rem;
+    color: #1e3c72;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+/* Real world content styling */
+.real-world-content {
+    max-width: 900px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+/* Individual use case card */
+.use-case {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+/* Use case heading */
+.use-case h3 {
+    color: #1e3c72;
+    margin-bottom: 12px;
+    font-size: 1.1rem;
+}
+
+/* Use case paragraph */
+.use-case p {
+    color: #555555;
+    margin-bottom: 12px;
+}
+
+/* Use case list items */
+.use-case ul {
+    list-style-position: inside;
+    margin-left: 0;
+}
+
+.use-case li {
+    color: #666666;
+    margin-bottom: 6px;
+    font-size: 0.95rem;
+}
+
+/* ========================================
+   FOOTER SECTION
+   ======================================== */
+
+/* Page footer styling */
+.page-footer {
+    background-color: #1e3c72;
+    color: #ffffff;
+    padding: 30px 20px;
+    text-align: center;
+    margin-top: 40px;
+}
+
+/* Footer paragraphs */
+.page-footer p {
+    margin-bottom: 10px;
+    font-size: 0.95rem;
+}
+
+/* Last paragraph in footer */
+.page-footer p:last-child {
+    margin-bottom: 0;
+    font-size: 0.9rem;
+    color: #b0d4ff;
+}
+
+/* ========================================
+   RESPONSIVE DESIGN
+   ======================================== */
+
+/* Media query for tablets and smaller screens */
+@media (max-width: 768px) {
+    /* Adjust page header font size for mobile */
+    .page-header h1 {
+        font-size: 2rem;
+    }
+    
+    /* Stack navigation items vertically on mobile */
+    .nav-list {
+        gap: 15px;
+    }
+    
+    /* Make business cards full width on mobile */
+    .business-card {
+        width: 100%;
+        max-width: 350px;
+    }
+    
+    /* Adjust card container to single column on mobile */
+    .card-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    /* Stack explanation cards vertically */
+    .explanation-content {
+        grid-template-columns: 1fr;
+    }
+    
+    /* Stack question items vertically */
+    .questions-container {
+        grid-template-columns: 1fr;
+    }
+    
+    /* Stack real world use cases vertically */
+    .real-world-content {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Media query for small screens (mobile phones) */
+@media (max-width: 480px) {
+    /* Reduce padding on mobile */
+    body {
+        font-size: 14px;
+    }
+    
+    /* Reduce header padding on mobile */
+    .page-header {
+        padding: 25px 15px;
+    }
+    
+    /* Make main section padding smaller on mobile */
+    .main-section {
+        padding: 0 10px;
+    }
+    
+    /* Reduce section padding on mobile */
+    .explanation-section,
+    .interview-section,
+    .exercise-section,
+    .real-world-section {
+        padding: 25px 15px;
+    }
+    
+    /* Adjust navigation gap on mobile */
+    .nav-list {
+        gap: 10px;
+    }
+    
+    /* Reduce exercise box padding on mobile */
+    .exercise-box {
+        padding: 15px;
+    }
+}
+
+</template>
+
+    <script src="../code-viewer.js" data-code-viewer-asset defer></script>
 </body>
 
 </html>
+
+
+

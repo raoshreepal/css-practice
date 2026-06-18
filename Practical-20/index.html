@@ -1,48 +1,73 @@
-<!-- PRACTICAL 20: PORTFOLIO LAYOUT -->
+﻿<!-- PRACTICAL 20: PORTFOLIO LAYOUT -->
 <!DOCTYPE html>
 <html lang="en">
 <head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Practical 20 - Portfolio Layout</title><link rel="stylesheet" href="style.css"></head>
+    <title>Practical 20 - Portfolio Layout</title><link rel="stylesheet" href="style.css">    <link rel="stylesheet" href="../code-viewer.css" data-code-viewer-asset>
+</head>
 <body>
     <header class="header"><h1>John Doe</h1><p>Web Developer & Designer</p></header>
     <section class="portfolio">
         <div class="project-card">
-            <div class="project-image">🎨</div>
+            <div class="project-image">Design</div>
             <h3>Web Design</h3>
             <p>Modern responsive website design with clean aesthetics</p>
-            <a href="#" class="project-link">View Project →</a>
+            <a href="#" class="project-link">View Project -></a>
         </div>
         <div class="project-card">
-            <div class="project-image">💻</div>
+            <div class="project-image">Code</div>
             <h3>E-commerce Platform</h3>
             <p>Full-featured online shopping platform with secure checkout</p>
-            <a href="#" class="project-link">View Project →</a>
+            <a href="#" class="project-link">View Project -></a>
         </div>
         <div class="project-card">
-            <div class="project-image">📱</div>
+            <div class="project-image">Mobile</div>
             <h3>Mobile App</h3>
             <p>Cross-platform mobile application for iOS and Android</p>
-            <a href="#" class="project-link">View Project →</a>
+            <a href="#" class="project-link">View Project -></a>
         </div>
         <div class="project-card">
-            <div class="project-image">🔧</div>
+            <div class="project-image">Tools</div>
             <h3>Dashboard Tool</h3>
             <p>Interactive analytics dashboard with real-time data visualization</p>
-            <a href="#" class="project-link">View Project →</a>
+            <a href="#" class="project-link">View Project -></a>
         </div>
         <div class="project-card">
-            <div class="project-image">🎯</div>
+            <div class="project-image">Brand</div>
             <h3>Marketing Website</h3>
             <p>SEO-optimized landing page for online marketing campaign</p>
-            <a href="#" class="project-link">View Project →</a>
+            <a href="#" class="project-link">View Project -></a>
         </div>
         <div class="project-card">
-            <div class="project-image">🚀</div>
+            <div class="project-image">Launch</div>
             <h3>SaaS Application</h3>
             <p>Subscription-based software platform for enterprise clients</p>
-            <a href="#" class="project-link">View Project →</a>
+            <a href="#" class="project-link">View Project -></a>
         </div>
     </section>
-    <footer class="footer"><p>&copy; 2024 | Practical 20: Portfolio Layout</p></footer>
+    <footer class="footer"><p>&copy; 2024 | Practical 20: Portfolio Layout</p></footer><template data-code-source="css" hidden>
+/* PRACTICAL 20: PORTFOLIO LAYOUT */
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:'Segoe UI',sans-serif;background:#f5f5f5}
+.header{background:linear-gradient(135deg,#667eea 0%,#764ba2 100%);color:white;padding:80px 20px;text-align:center}
+.header h1{font-size:3rem;margin-bottom:10px}
+.header p{font-size:1.2rem;opacity:0.9}
+.portfolio{max-width:1200px;margin:50px auto;padding:0 20px;display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:30px}
+.project-card{background:white;border-radius:12px;overflow:hidden;box-shadow:0 4px 15px rgba(0,0,0,0.1);transition:all 0.3s}
+.project-card:hover{transform:translateY(-10px);box-shadow:0 8px 25px rgba(0,0,0,0.15)}
+.project-image{width:100%;height:200px;background:linear-gradient(135deg,#667eea 0%,#764ba2 100%);display:flex;justify-content:center;align-items:center;font-size:3rem}
+.project-card h3{color:#333;padding:20px 20px 10px;font-size:1.3rem}
+.project-card p{color:#666;padding:0 20px 15px;line-height:1.6}
+.project-link{display:inline-block;margin:0 20px 20px;color:#667eea;text-decoration:none;font-weight:700;transition:0.3s}
+.project-link:hover{color:#764ba2;transform:translateX(5px)}
+.footer{background:linear-gradient(135deg,#667eea 0%,#764ba2 100%);color:white;padding:30px 20px;text-align:center;margin-top:50px}
+@media(max-width:768px){.header{padding:50px 15px}.header h1{font-size:2rem}.portfolio{grid-template-columns:repeat(auto-fit,minmax(250px,1fr))}}
+@media(max-width:480px){.portfolio{grid-template-columns:1fr}.header{padding:30px 15px}.header h1{font-size:1.5rem}.header p{font-size:1rem}}
+
+</template>
+
+    <script src="../code-viewer.js" data-code-viewer-asset defer></script>
 </body>
 </html>
+
+
+

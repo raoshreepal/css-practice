@@ -1,19 +1,20 @@
-<!-- PRACTICAL 7: PRODUCT CARD -->
+﻿<!-- PRACTICAL 7: PRODUCT CARD -->
 <!DOCTYPE html>
 <html lang="en">
 <head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Practical 7 - Product Cards</title><link rel="stylesheet" href="style.css"></head>
+    <title>Practical 7 - Product Cards</title><link rel="stylesheet" href="style.css">    <link rel="stylesheet" href="../code-viewer.css" data-code-viewer-asset>
+</head>
 <body>
     <header class="page-header"><h1>E-commerce Product Cards</h1><p class="subtitle">Display Products Beautifully</p></header>
     <nav class="page-nav"><ul class="nav-list"><li><a href="#products">Products</a></li><li><a href="#info">Learn</a></li></ul></nav>
     <section id="products" class="main-section"><h2>Product Catalog</h2>
         <article class="products-grid">
             <div class="product-card">
-                <div class="product-image">📱</div>
+                <div class="product-image">Phone</div>
                 <div class="product-info">
                     <h3 class="product-name">Smartphone X</h3>
                     <p class="product-category">Electronics</p>
-                    <div class="product-rating">⭐⭐⭐⭐⭐ (324)</div>
+                    <div class="product-rating">5 Stars (324)</div>
                     <p class="product-price"><span class="currency">$</span><span class="amount">599</span></p>
                     <p class="product-desc">Latest flagship with 5G connectivity</p>
                     <button class="add-cart">Add to Cart</button>
@@ -21,22 +22,23 @@
             </div>
             <div class="product-card">
                 <div class="product-badge">Sale</div>
-                <div class="product-image">💻</div>
+                <div class="product-image">Laptop</div>
                 <div class="product-info">
                     <h3 class="product-name">Laptop Pro</h3>
                     <p class="product-category">Computers</p>
-                    <div class="product-rating">⭐⭐⭐⭐⭐ (187)</div>
+                    <div class="product-rating">5 Stars (187)</div>
                     <p class="product-price"><span class="original">$1299</span><span class="currency">$</span><span class="amount">999</span></p>
                     <p class="product-desc">Powerful computing for professionals</p>
                     <button class="add-cart">Add to Cart</button>
                 </div>
             </div>
             <div class="product-card">
-                <div class="product-image">⌚</div>
+                <div class="product-image">Watch</div>
+                
                 <div class="product-info">
                     <h3 class="product-name">Smart Watch</h3>
                     <p class="product-category">Wearables</p>
-                    <div class="product-rating">⭐⭐⭐⭐ (92)</div>
+                    <div class="product-rating">5 Stars (92)</div>
                     <p class="product-price"><span class="currency">$</span><span class="amount">299</span></p>
                     <p class="product-desc">Track fitness and stay connected</p>
                     <button class="add-cart">Add to Cart</button>
@@ -66,5 +68,58 @@
         </article>
     </section>
 
-    <footer class="page-footer"><p>&copy; 2024 | Practical 7: Product Cards</p></footer>
+    <footer class="page-footer"><p>&copy; 2024 | Practical 7: Product Cards</p></footer><template data-code-source="css" hidden>
+/* PRACTICAL 7: PRODUCT CARDS */
+*{margin:0;padding:0;box-sizing:border-box}html{font-size:16px}body{font-family:'Segoe UI',sans-serif;background:#f5f5f5;color:#333}
+.page-header{background:linear-gradient(135deg,#ff6b6b 0%,#ee5a6f 100%);color:white;padding:40px 20px;text-align:center}
+.page-header h1{font-size:2.5rem}
+.page-nav{background:#333;padding:15px 0;position:sticky;top:0;z-index:100}
+.nav-list{list-style:none;display:flex;justify-content:center;gap:30px}
+.nav-list a{color:white;text-decoration:none;font-weight:600;padding:8px 15px;transition:0.3s}
+.nav-list a:hover{color:#ff6b6b}
+.main-section{max-width:1200px;margin:40px auto;padding:0 20px}
+.main-section h2{font-size:2rem;color:#ff6b6b;text-align:center;margin-bottom:40px}
+
+.products-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:25px}
+
+.product-card{background:white;border-radius:12px;overflow:hidden;box-shadow:0 4px 15px rgba(0,0,0,0.1);transition:all 0.3s ease;position:relative}
+.product-card:hover{transform:translateY(-8px);box-shadow:0 8px 25px rgba(0,0,0,0.15)}
+
+.product-badge{position:absolute;top:15px;right:15px;background:#ff6b6b;color:white;padding:8px 16px;border-radius:4px;font-weight:700;font-size:0.85rem;z-index:10}
+
+.product-image{height:200px;background:linear-gradient(135deg,#ffeaa7 0%,#fab1a0 100%);display:flex;justify-content:center;align-items:center;font-size:3rem}
+
+.product-info{padding:20px}
+.product-name{font-size:1.2rem;font-weight:700;color:#333;margin-bottom:5px}
+.product-category{font-size:0.85rem;color:#999;margin-bottom:8px}
+.product-rating{font-size:0.9rem;color:#ff6b6b;margin-bottom:10px}
+.product-price{font-size:1.5rem;font-weight:700;color:#ff6b6b;margin:10px 0}
+.original{text-decoration:line-through;color:#999;font-size:0.9rem;margin-right:10px}
+.currency{font-size:0.9rem}
+.product-desc{font-size:0.9rem;color:#666;margin-bottom:15px}
+.add-cart{width:100%;padding:12px;background:#ff6b6b;color:white;border:none;border-radius:6px;font-weight:700;cursor:pointer;transition:0.3s}
+.add-cart:hover{background:#ee5a6f}
+
+.explanation-section{background:white;padding:40px 20px;margin:40px 0;border-top:3px solid #ff6b6b}
+.explanation-section h2{font-size:2rem;color:#ff6b6b;text-align:center;margin-bottom:30px}
+.explanation-content{max-width:900px;margin:0 auto;display:grid;grid-template-columns:repeat(auto-fit,minmax(400px,1fr));gap:20px}
+.property-card{background:#f9f9f9;border:1px solid #e0e0e0;border-radius:8px;padding:20px}
+.property-card h3{color:#ff6b6b;margin-bottom:15px}
+
+.interview-section{background:#f5f5f5;padding:40px 20px;margin:40px 0}
+.interview-section h2{font-size:2rem;color:#ff6b6b;text-align:center;margin-bottom:30px}
+.questions-container{max-width:800px;margin:0 auto;display:grid;grid-template-columns:repeat(auto-fit,minmax(350px,1fr));gap:20px}
+.question-item{background:white;border-left:4px solid #ff6b6b;padding:20px}
+
+.page-footer{background:linear-gradient(135deg,#ff6b6b 0%,#ee5a6f 100%);color:white;padding:30px 20px;text-align:center;margin-top:40px}
+
+@media(max-width:768px){.products-grid{grid-template-columns:repeat(auto-fit,minmax(250px,1fr))}}
+@media(max-width:480px){.main-section{padding:0 10px}}
+
+</template>
+
+    <script src="../code-viewer.js" data-code-viewer-asset defer></script>
 </body></html>
+
+
+

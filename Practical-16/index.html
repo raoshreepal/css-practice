@@ -1,16 +1,38 @@
-<!-- PRACTICAL 16: DASHBOARD CARD -->
+﻿<!-- PRACTICAL 16: DASHBOARD CARD -->
 <!DOCTYPE html>
 <html lang="en">
 <head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Practical 16 - Dashboard Cards</title><link rel="stylesheet" href="style.css"></head>
+    <title>Practical 16 - Dashboard Cards</title><link rel="stylesheet" href="style.css">    <link rel="stylesheet" href="../code-viewer.css" data-code-viewer-asset>
+</head>
 <body>
     <header class="header"><h1>Dashboard Metrics</h1></header>
     <section class="dashboard">
-        <div class="card"><div class="card-icon">📈</div><h3>Revenue</h3><p class="card-value">$125,430</p><p class="card-change">↑ 12% this month</p></div>
-        <div class="card"><div class="card-icon">👥</div><h3>Users</h3><p class="card-value">8,246</p><p class="card-change">↑ 8.5% this month</p></div>
-        <div class="card"><div class="card-icon">🎯</div><h3>Conversions</h3><p class="card-value">2,452</p><p class="card-change">↑ 5.2% this month</p></div>
-        <div class="card"><div class="card-icon">⏱️</div><h3>Avg Time</h3><p class="card-value">5m 32s</p><p class="card-change">↓ 2.1% this month</p></div>
+        <div class="card"><div class="card-icon">Rev</div><h3>Revenue</h3><p class="card-value">$125,430</p><p class="card-change">Up 12% this month</p></div>
+        <div class="card"><div class="card-icon">Usr</div><h3>Users</h3><p class="card-value">8,246</p><p class="card-change">Up 8.5% this month</p></div>
+        <div class="card"><div class="card-icon">Cvr</div><h3>Conversions</h3><p class="card-value">2,452</p><p class="card-change">Up 5.2% this month</p></div>
+        <div class="card"><div class="card-icon">Avg</div><h3>Avg Time</h3><p class="card-value">5m 32s</p><p class="card-change">Down 2.1% this month</p></div>
     </section>
-    <footer class="footer"><p>&copy; 2024 | Practical 16: Dashboard Cards</p></footer>
+    <footer class="footer"><p>&copy; 2024 | Practical 16: Dashboard Cards</p></footer><template data-code-source="css" hidden>
+/* PRACTICAL 16: DASHBOARD CARD */
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:'Segoe UI',sans-serif;background:#f5f5f5}
+.header{background:linear-gradient(135deg,#667eea 0%,#764ba2 100%);color:white;padding:50px 20px;text-align:center}
+.header h1{font-size:2.5rem}
+.dashboard{max-width:1200px;margin:50px auto;padding:0 20px;display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:25px}
+.card{background:white;padding:25px;border-radius:12px;box-shadow:0 4px 15px rgba(0,0,0,0.1);transition:all 0.3s;border-top:4px solid #667eea}
+.card:hover{transform:translateY(-8px);box-shadow:0 8px 25px rgba(0,0,0,0.15)}
+.card-icon{font-size:2.5rem;margin-bottom:15px}
+.card h3{color:#333;margin-bottom:15px;font-size:1.1rem}
+.card-value{font-size:1.8rem;font-weight:700;color:#667eea;margin-bottom:8px}
+.card-change{font-size:0.9rem;color:#999}
+.footer{background:linear-gradient(135deg,#667eea 0%,#764ba2 100%);color:white;padding:30px 20px;text-align:center;margin-top:50px}
+@media(max-width:480px){.dashboard{grid-template-columns:1fr}.header{padding:30px 15px}}
+
+</template>
+
+    <script src="../code-viewer.js" data-code-viewer-asset defer></script>
 </body>
 </html>
+
+
+
