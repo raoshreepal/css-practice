@@ -1,0 +1,459 @@
+<!-- 
+    PRACTICAL 2: LOGIN FORM DESIGN
+    Topics: Box Model, Borders, Padding, Margin, Text Properties, Font Properties
+    Difficulty: Beginner
+    
+    This practical demonstrates how to create a professional login form
+    using semantic HTML5 and pure CSS styling.
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practical 2 - Login Form Design</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Header Section -->
+    <header class="page-header">
+        <h1>Professional Login Form Design</h1>
+        <p class="subtitle">Building Forms with Pure CSS</p>
+    </header>
+
+    <!-- Navigation Section -->
+    <nav class="page-nav">
+        <ul class="nav-list">
+            <li><a href="#form-section">Login Form</a></li>
+            <li><a href="#explanation">Learn CSS</a></li>
+            <li><a href="#interview">Questions</a></li>
+        </ul>
+    </nav>
+
+    <!-- Main Content Section -->
+    <section id="form-section" class="main-section">
+        <h2>Login Form Example</h2>
+        
+        <!-- Article containing the login form -->
+        <article class="form-container">
+            
+            <!-- Login Form -->
+            <div class="login-form-wrapper">
+                <form class="login-form">
+                    <!-- Form Header -->
+                    <div class="form-header">
+                        <h3 class="form-title">User Login</h3>
+                        <p class="form-subtitle">Access your account securely</p>
+                    </div>
+
+                    <!-- Email Input Field -->
+                    <div class="form-group">
+                        <label for="email-input" class="form-label">Email Address</label>
+                        <input 
+                            type="email" 
+                            id="email-input" 
+                            class="form-input" 
+                            placeholder="Enter your email"
+                            required
+                        >
+                        <p class="input-hint">We'll never share your email with anyone</p>
+                    </div>
+
+                    <!-- Password Input Field -->
+                    <div class="form-group">
+                        <label for="password-input" class="form-label">Password</label>
+                        <input 
+                            type="password" 
+                            id="password-input" 
+                            class="form-input" 
+                            placeholder="Enter your password"
+                            required
+                        >
+                        <p class="input-hint">Must be at least 6 characters</p>
+                    </div>
+
+                    <!-- Remember Me Checkbox -->
+                    <div class="form-group checkbox-group">
+                        <input 
+                            type="checkbox" 
+                            id="remember-checkbox" 
+                            class="form-checkbox"
+                        >
+                        <label for="remember-checkbox" class="checkbox-label">Remember me on this device</label>
+                    </div>
+
+                    <!-- Submit Button -->
+                    <button type="submit" class="submit-button">Login to Your Account</button>
+
+                    <!-- Form Footer Links -->
+                    <div class="form-footer-links">
+                        <a href="#forgot" class="footer-link">Forgot your password?</a>
+                        <span class="footer-divider">|</span>
+                        <a href="#signup" class="footer-link">Create new account</a>
+                    </div>
+                </form>
+            </div>
+
+            <!-- Alternative Dark Theme Form -->
+            <div class="login-form-wrapper dark-theme">
+                <form class="login-form">
+                    <!-- Form Header -->
+                    <div class="form-header">
+                        <h3 class="form-title">Admin Login</h3>
+                        <p class="form-subtitle">Secure administration panel</p>
+                    </div>
+
+                    <!-- Email Input Field -->
+                    <div class="form-group">
+                        <label for="admin-email" class="form-label">Admin Email</label>
+                        <input 
+                            type="email" 
+                            id="admin-email" 
+                            class="form-input" 
+                            placeholder="admin@company.com"
+                            required
+                        >
+                    </div>
+
+                    <!-- Password Input Field -->
+                    <div class="form-group">
+                        <label for="admin-password" class="form-label">Password</label>
+                        <input 
+                            type="password" 
+                            id="admin-password" 
+                            class="form-input" 
+                            placeholder="Enter password"
+                            required
+                        >
+                    </div>
+
+                    <!-- Remember Me Checkbox -->
+                    <div class="form-group checkbox-group">
+                        <input 
+                            type="checkbox" 
+                            id="admin-remember" 
+                            class="form-checkbox"
+                        >
+                        <label for="admin-remember" class="checkbox-label">Keep me logged in</label>
+                    </div>
+
+                    <!-- Submit Button -->
+                    <button type="submit" class="submit-button">Sign In</button>
+
+                    <!-- Form Footer Links -->
+                    <div class="form-footer-links">
+                        <a href="#forgot" class="footer-link">Forgot password?</a>
+                    </div>
+                </form>
+            </div>
+        </article>
+    </section>
+
+    <!-- Explanation Section -->
+    <section id="explanation" class="explanation-section">
+        <h2>CSS Properties Explained</h2>
+        
+        <article class="explanation-content">
+            <div class="property-card">
+                <h3>1. Box Model</h3>
+                <div class="property-detail">
+                    <p><strong>Purpose:</strong> Foundation of CSS layout - consists of content, padding, border, and margin.</p>
+                    <p><strong>Syntax:</strong> Content → Padding → Border → Margin</p>
+                    <p><strong>Example Used:</strong> form-input has padding for internal space and border-radius for shape.</p>
+                    <p><strong>Real Project Usage:</strong> Every website uses box model for all elements - Flipkart, Amazon product cards.</p>
+                </div>
+            </div>
+
+            <div class="property-card">
+                <h3>2. Padding</h3>
+                <div class="property-detail">
+                    <p><strong>Purpose:</strong> Creates internal space between content and border - gives breathing room to content.</p>
+                    <p><strong>Syntax:</strong> padding: value; or padding: top right bottom left;</p>
+                    <p><strong>Example Used:</strong> padding: 15px 20px; (vertical and horizontal padding)</p>
+                    <p><strong>Real Project Usage:</strong> Form inputs on all websites have padding for comfortable text entry.</p>
+                </div>
+            </div>
+
+            <div class="property-card">
+                <h3>3. Margin</h3>
+                <div class="property-detail">
+                    <p><strong>Purpose:</strong> Creates external space between elements - separates form fields and buttons.</p>
+                    <p><strong>Syntax:</strong> margin: value; or margin: top right bottom left;</p>
+                    <p><strong>Example Used:</strong> margin-bottom: 20px; (space below each form group)</p>
+                    <p><strong>Real Project Usage:</strong> All forms use margin to create spacing between input fields.</p>
+                </div>
+            </div>
+
+            <div class="property-card">
+                <h3>4. Border</h3>
+                <div class="property-detail">
+                    <p><strong>Purpose:</strong> Defines the edge of elements - makes input fields visible and defined.</p>
+                    <p><strong>Syntax:</strong> border: width style color;</p>
+                    <p><strong>Example Used:</strong> border: 1px solid #ddd; (thin light gray border)</p>
+                    <p><strong>Real Project Usage:</strong> Input fields on Facebook, Gmail, Flipkart all have borders.</p>
+                </div>
+            </div>
+
+            <div class="property-card">
+                <h3>5. Border Radius</h3>
+                <div class="property-detail">
+                    <p><strong>Purpose:</strong> Rounds the corners of elements for modern, softer appearance.</p>
+                    <p><strong>Syntax:</strong> border-radius: value;</p>
+                    <p><strong>Example Used:</strong> border-radius: 4px; (slightly rounded corners)</p>
+                    <p><strong>Real Project Usage:</strong> Modern form inputs use subtle border-radius for contemporary look.</p>
+                </div>
+            </div>
+
+            <div class="property-card">
+                <h3>6. Font Family</h3>
+                <div class="property-detail">
+                    <p><strong>Purpose:</strong> Specifies the typeface for text - affects readability and visual design.</p>
+                    <p><strong>Syntax:</strong> font-family: 'Font Name', generic-family;</p>
+                    <p><strong>Example Used:</strong> font-family: 'Segoe UI', Tahoma, sans-serif;</p>
+                    <p><strong>Real Project Usage:</strong> Every website specifies font family - LinkedIn uses specific fonts for brand.</p>
+                </div>
+            </div>
+
+            <div class="property-card">
+                <h3>7. Font Size</h3>
+                <div class="property-detail">
+                    <p><strong>Purpose:</strong> Controls the size of text - creates hierarchy and readability.</p>
+                    <p><strong>Syntax:</strong> font-size: value;</p>
+                    <p><strong>Example Used:</strong> font-size: 1rem; (base size) or font-size: 1.2rem; (larger)</p>
+                    <p><strong>Real Project Usage:</strong> Headings on Amazon are 24px, body text is 14px for hierarchy.</p>
+                </div>
+            </div>
+
+            <div class="property-card">
+                <h3>8. Font Weight</h3>
+                <div class="property-detail">
+                    <p><strong>Purpose:</strong> Controls the thickness of text - emphasizes important content.</p>
+                    <p><strong>Syntax:</strong> font-weight: value; (normal, bold, 400, 700, etc.)</p>
+                    <p><strong>Example Used:</strong> font-weight: 600; (semi-bold for labels)</p>
+                    <p><strong>Real Project Usage:</strong> Form labels are bold (600-700) for emphasis over inputs.</p>
+                </div>
+            </div>
+
+            <div class="property-card">
+                <h3>9. Color (Text)</h3>
+                <div class="property-detail">
+                    <p><strong>Purpose:</strong> Sets text color - crucial for readability and visual hierarchy.</p>
+                    <p><strong>Syntax:</strong> color: value;</p>
+                    <p><strong>Example Used:</strong> color: #333; (dark gray for main text)</p>
+                    <p><strong>Real Project Usage:</strong> Form hints use lighter gray (#999) for secondary information.</p>
+                </div>
+            </div>
+
+            <div class="property-card">
+                <h3>10. Background Color</h3>
+                <div class="property-detail">
+                    <p><strong>Purpose:</strong> Sets the background color of elements.</p>
+                    <p><strong>Syntax:</strong> background-color: value;</p>
+                    <p><strong>Example Used:</strong> background-color: #f8f8f8; (light gray for input background)</p>
+                    <p><strong>Real Project Usage:</strong> All form inputs have subtle backgrounds for definition.</p>
+                </div>
+            </div>
+
+            <div class="property-card">
+                <h3>Best Practices for Forms</h3>
+                <div class="property-detail">
+                    <p><strong>Form Design Best Practices:</strong></p>
+                    <ul class="tips-list">
+                        <li>✅ Use minimum 44px height for touch targets (mobile friendly)</li>
+                        <li>✅ Provide clear labels for every input field</li>
+                        <li>✅ Add helpful hints below form fields</li>
+                        <li>✅ Use consistent spacing between form groups</li>
+                        <li>✅ Make buttons obviously clickable with contrast</li>
+                        <li>❌ Don't use placeholder text instead of labels</li>
+                        <li>❌ Don't use color alone to indicate errors</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="property-card">
+                <h3>Accessibility Considerations</h3>
+                <div class="property-detail">
+                    <p><strong>Important for All Users:</strong></p>
+                    <ul class="tips-list">
+                        <li>Always use proper label tags with 'for' attribute</li>
+                        <li>Ensure contrast ratio is at least 4.5:1 for text</li>
+                        <li>Use semantic HTML form elements</li>
+                        <li>Provide clear error messages and success feedback</li>
+                        <li>Make focus states visible (outline or border change)</li>
+                    </ul>
+                </div>
+            </div>
+        </article>
+    </section>
+
+    <!-- Interview Questions Section -->
+    <section id="interview" class="interview-section">
+        <h2>Interview Questions</h2>
+        
+        <article class="questions-container">
+            <div class="question-item">
+                <h4 class="question-number">Question 1</h4>
+                <p class="question-text">Explain the CSS box model with an example. What is the order of content, padding, border, and margin?</p>
+                <p class="question-hint">💡 Hint: Think about what happens when you resize an element</p>
+            </div>
+
+            <div class="question-item">
+                <h4 class="question-number">Question 2</h4>
+                <p class="question-text">How do you make form inputs work well on both desktop and mobile? What CSS should you use?</p>
+                <p class="question-hint">💡 Hint: Consider minimum touch target size and responsive units</p>
+            </div>
+
+            <div class="question-item">
+                <h4 class="question-number">Question 3</h4>
+                <p class="question-text">What's the difference between border and outline in CSS? When would you use each?</p>
+                <p class="question-hint">💡 Hint: Outline doesn't take up space in the layout</p>
+            </div>
+
+            <div class="question-item">
+                <h4 class="question-number">Question 4</h4>
+                <p class="question-text">How would you style a submit button to make it look clickable and professional?</p>
+                <p class="question-hint">💡 Hint: Consider color, padding, cursor, and hover states</p>
+            </div>
+
+            <div class="question-item">
+                <h4 class="question-number">Question 5</h4>
+                <p class="question-text">Why is it important to use proper label tags with the 'for' attribute in forms?</p>
+                <p class="question-hint">💡 Hint: Think about accessibility and user experience</p>
+            </div>
+        </article>
+    </section>
+
+    <!-- Student Exercise Section -->
+    <section class="exercise-section">
+        <h2>Student Exercise</h2>
+        
+        <article class="exercise-content">
+            <h3>Practice Task: Create a Contact Form</h3>
+            <div class="exercise-box">
+                <p><strong>Objective:</strong> Create a professional contact form with the following requirements:</p>
+                
+                <div class="requirements-list">
+                    <h4>Requirements:</h4>
+                    <ul>
+                        <li>Maximum width: 500px with proper responsiveness</li>
+                        <li>Include fields: Name, Email, Phone, Subject, Message</li>
+                        <li>Use proper form semantic HTML (fieldset, legend optional)</li>
+                        <li>Add descriptive labels for every input</li>
+                        <li>Include helpful hints below fields (like "Name should be 3-50 characters")</li>
+                        <li>Make input fields at least 44px tall for mobile touch</li>
+                        <li>Use consistent padding and spacing throughout</li>
+                        <li>Create a styled submit button that looks clickable</li>
+                        <li>Add a reset button styled differently from submit</li>
+                    </ul>
+                </div>
+
+                <div class="bonus-section">
+                    <h4>🌟 Bonus Challenges:</h4>
+                    <ul>
+                        <li>Add a textarea for the message with rows="5"</li>
+                        <li>Create different form styles for light and dark themes</li>
+                        <li>Add placeholder text but keep labels for accessibility</li>
+                        <li>Style focus states so users know which field they're in</li>
+                        <li>Add smooth transitions on input focus</li>
+                        <li>Create a success message that appears after submit</li>
+                    </ul>
+                </div>
+
+                <div class="expected-output">
+                    <h4>Expected Output:</h4>
+                    <p>A professional contact form with:</p>
+                    <ul>
+                        <li>Clear visual hierarchy between fields</li>
+                        <li>Proper spacing and alignment</li>
+                        <li>Professional color scheme</li>
+                        <li>Visible focus states for accessibility</li>
+                        <li>Mobile-friendly design</li>
+                    </ul>
+                </div>
+            </div>
+        </article>
+    </section>
+
+    <!-- Real World Uses Section -->
+    <section class="real-world-section">
+        <h2>Real World Applications</h2>
+        
+        <article class="real-world-content">
+            <div class="use-case">
+                <h3>1. Gmail Login</h3>
+                <p>Google's Gmail uses professional form styling with:</p>
+                <ul>
+                    <li>Clean, minimal design with plenty of whitespace</li>
+                    <li>Large input fields for easy text entry</li>
+                    <li>Clear visual hierarchy with form heading</li>
+                    <li>Accessible form with proper labels</li>
+                </ul>
+            </div>
+
+            <div class="use-case">
+                <h3>2. Facebook Login</h3>
+                <p>Facebook's login form demonstrates:</p>
+                <ul>
+                    <li>Prominent action button with brand color</li>
+                    <li>Social login options alongside traditional login</li>
+                    <li>Clear error messaging</li>
+                    <li>Links for account recovery</li>
+                </ul>
+            </div>
+
+            <div class="use-case">
+                <h3>3. E-commerce Checkout (Flipkart, Amazon)</h3>
+                <p>E-commerce platforms use forms extensively for:</p>
+                <ul>
+                    <li>User registration and login</li>
+                    <li>Shipping information</li>
+                    <li>Payment details (with enhanced security)</li>
+                    <li>Order confirmation</li>
+                </ul>
+            </div>
+
+            <div class="use-case">
+                <h3>4. Banking Applications</h3>
+                <p>Banks use highly secure form designs with:</p>
+                <ul>
+                    <li>Multiple authentication steps</li>
+                    <li>Clear security indicators</li>
+                    <li>Accessible form design for all users</li>
+                    <li>Error prevention measures</li>
+                </ul>
+            </div>
+
+            <div class="use-case">
+                <h3>5. School/Hospital Management Systems</h3>
+                <p>Administrative systems use forms for:</p>
+                <ul>
+                    <li>Student/patient information entry</li>
+                    <li>Staff management</li>
+                    <li>Enrollment and registration</li>
+                    <li>Data collection and updates</li>
+                </ul>
+            </div>
+
+            <div class="use-case">
+                <h3>6. CRM Systems (Salesforce)</h3>
+                <p>CRM dashboards use forms for:</p>
+                <ul>
+                    <li>Contact information entry</li>
+                    <li>Deal tracking</li>
+                    <li>Sales pipeline management</li>
+                    <li>Customer interaction logging</li>
+                </ul>
+            </div>
+        </article>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="page-footer">
+        <p>&copy; 2024 CSS Practical Handbook. All rights reserved.</p>
+        <p>Practical 2: Login Form Design | Topics: Box Model, Borders, Padding, Font Properties, Text Properties</p>
+    </footer>
+</body>
+
+</html>

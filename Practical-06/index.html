@@ -1,0 +1,167 @@
+<!-- PRACTICAL 6: TEAM CARD -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practical 6 - Team Cards</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="page-header">
+        <h1>Meet Our Team</h1>
+        <p class="subtitle">Professional Team Member Cards</p>
+    </header>
+
+    <nav class="page-nav">
+        <ul class="nav-list"><li><a href="#team">Team Cards</a></li><li><a href="#explanation">Learn</a></li></ul>
+    </nav>
+
+    <section id="team" class="main-section">
+        <h2>Team Members</h2>
+        <article class="team-container">
+            <div class="team-card">
+                <div class="team-image">
+                    <div class="image-placeholder">👨‍💼</div>
+                </div>
+                <div class="team-info">
+                    <h3 class="member-name">John Smith</h3>
+                    <p class="member-title">Senior Designer</p>
+                    <p class="member-bio">Expert in UI/UX design with 8+ years experience</p>
+                    <div class="member-social">
+                        <a href="#" class="social-link">LinkedIn</a>
+                        <a href="#" class="social-link">Twitter</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="team-card">
+                <div class="team-image">
+                    <div class="image-placeholder">👩‍💻</div>
+                </div>
+                <div class="team-info">
+                    <h3 class="member-name">Sarah Johnson</h3>
+                    <p class="member-title">Lead Developer</p>
+                    <p class="member-bio">Full-stack developer passionate about clean code</p>
+                    <div class="member-social">
+                        <a href="#" class="social-link">GitHub</a>
+                        <a href="#" class="social-link">LinkedIn</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="team-card">
+                <div class="team-image">
+                    <div class="image-placeholder">👨‍🎨</div>
+                </div>
+                <div class="team-info">
+                    <h3 class="member-name">Mike Chen</h3>
+                    <p class="member-title">Product Manager</p>
+                    <p class="member-bio">Strategic thinker focused on user needs</p>
+                    <div class="member-social">
+                        <a href="#" class="social-link">LinkedIn</a>
+                        <a href="#" class="social-link">Email</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="team-card">
+                <div class="team-image">
+                    <div class="image-placeholder">👩‍🔬</div>
+                </div>
+                <div class="team-info">
+                    <h3 class="member-name">Emma Davis</h3>
+                    <p class="member-title">Marketing Lead</p>
+                    <p class="member-bio">Creative marketer with proven track record</p>
+                    <div class="member-social">
+                        <a href="#" class="social-link">Twitter</a>
+                        <a href="#" class="social-link">LinkedIn</a>
+                    </div>
+                </div>
+            </div>
+        </article>
+    </section>
+
+    <section id="explanation" class="explanation-section">
+        <h2>CSS Properties Explained</h2>
+        <article class="explanation-content">
+            <div class="property-card">
+                <h3>1. Border Radius</h3>
+                <p><strong>Purpose:</strong> Rounds corners of images and cards for modern appearance.</p>
+                <p><strong>Syntax:</strong> border-radius: 12px or 50% (circle)</p>
+                <p><strong>Real Usage:</strong> LinkedIn, Facebook use rounded images for profiles.</p>
+            </div>
+
+            <div class="property-card">
+                <h3>2. Box Shadow</h3>
+                <p><strong>Purpose:</strong> Creates depth and elevation for cards.</p>
+                <p><strong>Syntax:</strong> box-shadow: 0 4px 12px rgba(0,0,0,0.1)</p>
+                <p><strong>Real Usage:</strong> All team pages on corporate websites use shadows.</p>
+            </div>
+
+            <div class="property-card">
+                <h3>3. Overflow Hidden</h3>
+                <p><strong>Purpose:</strong> Clips content to parent bounds, hides overflow.</p>
+                <p><strong>Syntax:</strong> overflow: hidden</p>
+                <p><strong>Real Usage:</strong> Ensures images stay within rounded card borders.</p>
+            </div>
+
+            <div class="property-card">
+                <h3>4. Display Flex</h3>
+                <p><strong>Purpose:</strong> Arranges team cards in responsive rows.</p>
+                <p><strong>Syntax:</strong> display: flex; flex-wrap: wrap; gap: 20px</p>
+                <p><strong>Real Usage:</strong> Used for all responsive card layouts.</p>
+            </div>
+
+            <div class="property-card">
+                <h3>5. Hover Effects</h3>
+                <p><strong>Purpose:</strong> Makes cards interactive and engaging.</p>
+                <p><strong>Syntax:</strong> .card:hover { transform: scale(1.05) }</p>
+                <p><strong>Real Usage:</strong> Professional team pages use hover effects.</p>
+            </div>
+
+            <div class="property-card">
+                <h3>6. Text Alignment</h3>
+                <p><strong>Purpose:</strong> Centers text within team card info section.</p>
+                <p><strong>Syntax:</strong> text-align: center</p>
+                <p><strong>Real Usage:</strong> Standard for team member bio alignment.</p>
+            </div>
+        </article>
+    </section>
+
+    <section class="interview-section">
+        <h2>Interview Questions</h2>
+        <article class="questions-container">
+            <div class="question-item">
+                <h4>Question 1</h4>
+                <p>How do you create a circular image using border-radius?</p>
+                <p class="hint">💡 border-radius: 50%</p>
+            </div>
+            <div class="question-item">
+                <h4>Question 2</h4>
+                <p>How do you make team cards display 4 per row on desktop and 1 on mobile?</p>
+                <p class="hint">💡 Use grid-template-columns with media queries</p>
+            </div>
+            <div class="question-item">
+                <h4>Question 3</h4>
+                <p>What CSS creates a hover effect that lifts the card?</p>
+                <p class="hint">💡 transform: translateY(-10px) + transition</p>
+            </div>
+            <div class="question-item">
+                <h4>Question 4</h4>
+                <p>How do you hide image overflow within rounded card corners?</p>
+                <p class="hint">💡 overflow: hidden on card or image container</p>
+            </div>
+            <div class="question-item">
+                <h4>Question 5</h4>
+                <p>How do you align social links horizontally in a team card?</p>
+                <p class="hint">💡 display: flex with gap property</p>
+            </div>
+        </article>
+    </section>
+
+    <footer class="page-footer">
+        <p>&copy; 2024 CSS Practical Handbook | Practical 6: Team Cards</p>
+    </footer>
+</body>
+</html>

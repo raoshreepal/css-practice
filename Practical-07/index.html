@@ -1,0 +1,70 @@
+<!-- PRACTICAL 7: PRODUCT CARD -->
+<!DOCTYPE html>
+<html lang="en">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practical 7 - Product Cards</title><link rel="stylesheet" href="style.css"></head>
+<body>
+    <header class="page-header"><h1>E-commerce Product Cards</h1><p class="subtitle">Display Products Beautifully</p></header>
+    <nav class="page-nav"><ul class="nav-list"><li><a href="#products">Products</a></li><li><a href="#info">Learn</a></li></ul></nav>
+    <section id="products" class="main-section"><h2>Product Catalog</h2>
+        <article class="products-grid">
+            <div class="product-card">
+                <div class="product-image">📱</div>
+                <div class="product-info">
+                    <h3 class="product-name">Smartphone X</h3>
+                    <p class="product-category">Electronics</p>
+                    <div class="product-rating">⭐⭐⭐⭐⭐ (324)</div>
+                    <p class="product-price"><span class="currency">$</span><span class="amount">599</span></p>
+                    <p class="product-desc">Latest flagship with 5G connectivity</p>
+                    <button class="add-cart">Add to Cart</button>
+                </div>
+            </div>
+            <div class="product-card">
+                <div class="product-badge">Sale</div>
+                <div class="product-image">💻</div>
+                <div class="product-info">
+                    <h3 class="product-name">Laptop Pro</h3>
+                    <p class="product-category">Computers</p>
+                    <div class="product-rating">⭐⭐⭐⭐⭐ (187)</div>
+                    <p class="product-price"><span class="original">$1299</span><span class="currency">$</span><span class="amount">999</span></p>
+                    <p class="product-desc">Powerful computing for professionals</p>
+                    <button class="add-cart">Add to Cart</button>
+                </div>
+            </div>
+            <div class="product-card">
+                <div class="product-image">⌚</div>
+                <div class="product-info">
+                    <h3 class="product-name">Smart Watch</h3>
+                    <p class="product-category">Wearables</p>
+                    <div class="product-rating">⭐⭐⭐⭐ (92)</div>
+                    <p class="product-price"><span class="currency">$</span><span class="amount">299</span></p>
+                    <p class="product-desc">Track fitness and stay connected</p>
+                    <button class="add-cart">Add to Cart</button>
+                </div>
+            </div>
+        </article>
+    </section>
+
+    <section id="info" class="explanation-section"><h2>CSS Properties Explained</h2>
+        <article class="explanation-content">
+            <div class="property-card"><h3>1. Display Grid</h3>
+                <p><strong>Purpose:</strong> Creates responsive product grid layout.</p></div>
+            <div class="property-card"><h3>2. Object Fit</h3>
+                <p><strong>Purpose:</strong> Scales images to fill container maintaining aspect ratio.</p></div>
+            <div class="property-card"><h3>3. Overflow Hidden</h3>
+                <p><strong>Purpose:</strong> Clips image within card boundaries.</p></div>
+            <div class="property-card"><h3>4. Box Shadow</h3>
+                <p><strong>Purpose:</strong> Creates elevation and depth effects.</p></div>
+        </article>
+    </section>
+
+    <section class="interview-section"><h2>Interview Questions</h2>
+        <article class="questions-container">
+            <div class="question-item"><h4>Q1</h4><p>How do you display products 3 per row?</p></div>
+            <div class="question-item"><h4>Q2</h4><p>How do you position a "Sale" badge on a card?</p></div>
+            <div class="question-item"><h4>Q3</h4><p>How do you make product cards responsive?</p></div>
+        </article>
+    </section>
+
+    <footer class="page-footer"><p>&copy; 2024 | Practical 7: Product Cards</p></footer>
+</body></html>

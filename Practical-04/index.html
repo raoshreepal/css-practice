@@ -1,0 +1,289 @@
+<!-- 
+    PRACTICAL 4: HERO SECTION DESIGN
+    Topics: Background, Height, Width, Display, Padding, Text Properties
+    Difficulty: Beginner+
+    
+    This practical demonstrates a striking hero section commonly found
+    on landing pages and websites.
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practical 4 - Hero Section</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header class="page-header">
+        <h1>Hero Section Design</h1>
+        <p class="subtitle">Building Eye-Catching Landing Pages</p>
+    </header>
+
+    <nav class="page-nav">
+        <ul class="nav-list">
+            <li><a href="#hero-section">Hero Examples</a></li>
+            <li><a href="#explanation">Learn CSS</a></li>
+            <li><a href="#interview">Questions</a></li>
+        </ul>
+    </nav>
+
+    <section id="hero-section" class="main-section">
+        <h2>Hero Section Examples</h2>
+
+        <!-- Hero 1: Solid Background -->
+        <article class="hero-container">
+            <section class="hero hero-solid">
+                <div class="hero-content">
+                    <h2 class="hero-title">Welcome to Modern Web Design</h2>
+                    <p class="hero-subtitle">Create stunning experiences with pure CSS</p>
+                    <a href="#" class="hero-button">Get Started Now</a>
+                </div>
+            </section>
+        </article>
+
+        <!-- Hero 2: Gradient Background -->
+        <article class="hero-container">
+            <section class="hero hero-gradient">
+                <div class="hero-content">
+                    <h2 class="hero-title">Premium Solutions</h2>
+                    <p class="hero-subtitle">Take your business to the next level</p>
+                    <a href="#" class="hero-button hero-button-light">Learn More</a>
+                </div>
+            </section>
+        </article>
+
+        <!-- Hero 3: Dark Hero -->
+        <article class="hero-container">
+            <section class="hero hero-dark">
+                <div class="hero-content">
+                    <h2 class="hero-title">Innovation Starts Here</h2>
+                    <p class="hero-subtitle">Join thousands of satisfied customers</p>
+                    <div class="hero-buttons">
+                        <a href="#" class="hero-button">Start Free Trial</a>
+                        <a href="#" class="hero-button-outline">Watch Demo</a>
+                    </div>
+                </div>
+            </section>
+        </article>
+
+        <!-- Hero 4: Two Column Layout -->
+        <article class="hero-container">
+            <section class="hero hero-two-column">
+                <div class="hero-content">
+                    <h2 class="hero-title">Build Responsive Websites</h2>
+                    <p class="hero-subtitle">Master CSS for all devices and screen sizes</p>
+                    <a href="#" class="hero-button">Start Learning</a>
+                </div>
+                <div class="hero-image">
+                    <div class="placeholder-image">
+                        <p>[ Hero Image Placeholder ]</p>
+                    </div>
+                </div>
+            </section>
+        </article>
+    </section>
+
+    <section id="explanation" class="explanation-section">
+        <h2>CSS Properties Explained</h2>
+        
+        <article class="explanation-content">
+            <div class="property-card">
+                <h3>1. Background Color</h3>
+                <div class="property-detail">
+                    <p><strong>Purpose:</strong> Sets a solid background color for hero sections.</p>
+                    <p><strong>Syntax:</strong> background-color: value;</p>
+                    <p><strong>Example Used:</strong> background-color: #2c3e50;</p>
+                    <p><strong>Real Project Usage:</strong> Airbnb, Slack use solid backgrounds for hero sections.</p>
+                </div>
+            </div>
+
+            <div class="property-card">
+                <h3>2. Background Gradient</h3>
+                <div class="property-detail">
+                    <p><strong>Purpose:</strong> Creates gradient backgrounds for modern, dynamic look.</p>
+                    <p><strong>Syntax:</strong> background: linear-gradient(angle, color1, color2);</p>
+                    <p><strong>Example Used:</strong> background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);</p>
+                    <p><strong>Real Project Usage:</strong> Stripe, Figma use gradients for visual appeal.</p>
+                </div>
+            </div>
+
+            <div class="property-card">
+                <h3>3. Height Property</h3>
+                <div class="property-detail">
+                    <p><strong>Purpose:</strong> Sets the vertical height of hero section.</p>
+                    <p><strong>Syntax:</strong> height: value; (px, vh, %, etc.)</p>
+                    <p><strong>Example Used:</strong> height: 100vh; (full viewport height)</p>
+                    <p><strong>Real Project Usage:</strong> Most landing pages use full viewport height for hero.</p>
+                </div>
+            </div>
+
+            <div class="property-card">
+                <h3>4. Display Flex</h3>
+                <div class="property-detail">
+                    <p><strong>Purpose:</strong> Enables flexbox layout for centering content easily.</p>
+                    <p><strong>Syntax:</strong> display: flex; with justify-content and align-items</p>
+                    <p><strong>Example Used:</strong> Flex to center content vertically and horizontally.</p>
+                    <p><strong>Real Project Usage:</strong> All modern websites use flexbox for layouts.</p>
+                </div>
+            </div>
+
+            <div class="property-card">
+                <h3>5. Text Alignment</h3>
+                <div class="property-detail">
+                    <p><strong>Purpose:</strong> Centers or aligns text within the hero section.</p>
+                    <p><strong>Syntax:</strong> text-align: center; (left, right, center, justify)</p>
+                    <p><strong>Example Used:</strong> text-align: center;</p>
+                    <p><strong>Real Project Usage:</strong> Hero sections typically have centered text.</p>
+                </div>
+            </div>
+
+            <div class="property-card">
+                <h3>6. Padding</h3>
+                <div class="property-detail">
+                    <p><strong>Purpose:</strong> Creates space inside hero around content.</p>
+                    <p><strong>Syntax:</strong> padding: value;</p>
+                    <p><strong>Example Used:</strong> padding: 60px 20px;</p>
+                    <p><strong>Real Project Usage:</strong> Ensures content doesn't touch edges on mobile.</p>
+                </div>
+            </div>
+
+            <div class="property-card">
+                <h3>7. Color (Text Color)</h3>
+                <div class="property-detail">
+                    <p><strong>Purpose:</strong> Sets text color for readability on backgrounds.</p>
+                    <p><strong>Syntax:</strong> color: value;</p>
+                    <p><strong>Example Used:</strong> color: #ffffff; (white on dark backgrounds)</p>
+                    <p><strong>Real Project Usage:</strong> Contrast is crucial for accessible hero sections.</p>
+                </div>
+            </div>
+
+            <div class="property-card">
+                <h3>8. Font Size & Weight</h3>
+                <div class="property-detail">
+                    <p><strong>Purpose:</strong> Creates visual hierarchy in hero content.</p>
+                    <p><strong>Syntax:</strong> font-size: value; font-weight: value;</p>
+                    <p><strong>Example Used:</strong> Titles: 3.5rem, 700; Subtitles: 1.3rem, 400</p>
+                    <p><strong>Real Project Usage:</strong> All websites use large fonts for hero titles.</p>
+                </div>
+            </div>
+        </article>
+    </section>
+
+    <section id="interview" class="interview-section">
+        <h2>Interview Questions</h2>
+        
+        <article class="questions-container">
+            <div class="question-item">
+                <h4 class="question-number">Question 1</h4>
+                <p class="question-text">How do you make a hero section that takes up the full viewport height?</p>
+                <p class="question-hint">💡 Hint: Use height: 100vh and display: flex</p>
+            </div>
+
+            <div class="question-item">
+                <h4 class="question-number">Question 2</h4>
+                <p class="question-text">What is a CSS gradient and how do you create one? Give examples of linear and radial.</p>
+                <p class="question-hint">💡 Hint: linear-gradient and radial-gradient functions</p>
+            </div>
+
+            <div class="question-item">
+                <h4 class="question-number">Question 3</h4>
+                <p class="question-text">How would you center content both horizontally and vertically in a hero section?</p>
+                <p class="question-hint">💡 Hint: Use flexbox with justify-content and align-items</p>
+            </div>
+
+            <div class="question-item">
+                <h4 class="question-number">Question 4</h4>
+                <p class="question-text">Why is it important to ensure good contrast between text and background in hero sections?</p>
+                <p class="question-hint">💡 Hint: Accessibility and readability for all users</p>
+            </div>
+
+            <div class="question-item">
+                <h4 class="question-number">Question 5</h4>
+                <p class="question-text">How do you make hero section images responsive on mobile devices?</p>
+                <p class="question-hint">💡 Hint: Use max-width, height: auto, and media queries</p>
+            </div>
+        </article>
+    </section>
+
+    <section class="exercise-section">
+        <h2>Student Exercise</h2>
+        
+        <article class="exercise-content">
+            <h3>Practice Task: Create a Portfolio Hero Section</h3>
+            <div class="exercise-box">
+                <p><strong>Objective:</strong> Design a portfolio hero section with:</p>
+                
+                <div class="requirements-list">
+                    <h4>Requirements:</h4>
+                    <ul>
+                        <li>Full viewport height (100vh)</li>
+                        <li>Gradient background (your choice of colors)</li>
+                        <li>Centered heading with your name</li>
+                        <li>Centered tagline (your profession/specialty)</li>
+                        <li>At least one call-to-action button</li>
+                        <li>Proper text contrast (white or dark text on background)</li>
+                        <li>Responsive padding for mobile</li>
+                        <li>Font hierarchy (large title, smaller subtitle)</li>
+                    </ul>
+                </div>
+
+                <div class="bonus-section">
+                    <h4>🌟 Bonus Challenges:</h4>
+                    <ul>
+                        <li>Add a subtle animation to the heading (fade-in)</li>
+                        <li>Create a smooth scroll effect</li>
+                        <li>Add social media icons at the bottom</li>
+                        <li>Implement a scroll-down indicator arrow</li>
+                        <li>Create multiple color scheme variations</li>
+                    </ul>
+                </div>
+            </div>
+        </article>
+    </section>
+
+    <section class="real-world-section">
+        <h2>Real World Applications</h2>
+        
+        <article class="real-world-content">
+            <div class="use-case">
+                <h3>1. Startup Landing Pages</h3>
+                <p>Stripe, Figma, Slack all use striking hero sections</p>
+            </div>
+
+            <div class="use-case">
+                <h3>2. Portfolio Websites</h3>
+                <p>Personal websites use hero sections to make first impressions</p>
+            </div>
+
+            <div class="use-case">
+                <h3>3. Product Launch Pages</h3>
+                <p>Apple, Google use hero sections for product announcements</p>
+            </div>
+
+            <div class="use-case">
+                <h3>4. SaaS Platforms</h3>
+                <p>Salesforce, HubSpot use hero sections on homepages</p>
+            </div>
+
+            <div class="use-case">
+                <h3>5. E-commerce Sites</h3>
+                <p>Shopify, Amazon Prime use hero sections for promotions</p>
+            </div>
+
+            <div class="use-case">
+                <h3>6. Educational Platforms</h3>
+                <p>Udemy, Coursera use hero sections to showcase courses</p>
+            </div>
+        </article>
+    </section>
+
+    <footer class="page-footer">
+        <p>&copy; 2024 CSS Practical Handbook. All rights reserved.</p>
+        <p>Practical 4: Hero Section | Topics: Background, Height, Width, Display, Text Properties</p>
+    </footer>
+</body>
+
+</html>

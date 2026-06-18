@@ -1,0 +1,18 @@
+/* PRACTICAL 18: STICKY HEADER */
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:'Segoe UI',sans-serif}
+.sticky-header{position:sticky;top:0;z-index:100;background:linear-gradient(135deg,#667eea 0%,#764ba2 100%);box-shadow:0 2px 8px rgba(0,0,0,0.1)}
+.nav-container{max-width:1200px;margin:0 auto;display:flex;justify-content:space-between;align-items:center;padding:15px 20px}
+.logo{color:white;font-size:1.5rem;font-weight:700;text-decoration:none}
+.nav-menu{list-style:none;display:flex;gap:30px}
+.nav-menu a{color:white;text-decoration:none;font-weight:600;transition:0.3s}
+.nav-menu a:hover{opacity:0.8}
+.hero{background:linear-gradient(135deg,#667eea 0%,#764ba2 100%);color:white;padding:100px 20px;text-align:center}
+.hero h1{font-size:3rem;margin-bottom:15px}
+.hero p{font-size:1.1rem;opacity:0.9}
+.content{max-width:1000px;margin:0 auto;padding:40px 20px}
+.content h2{color:#667eea;margin-top:30px;margin-bottom:15px;font-size:1.5rem}
+.content p{color:#666;line-height:1.8;margin-bottom:20px}
+.footer{background:#333;color:white;padding:30px 20px;text-align:center}
+@media(max-width:768px){.nav-menu{gap:15px;font-size:0.9rem}.hero h1{font-size:2rem}.content{padding:20px}}
+@media(max-width:480px){.nav-container{flex-direction:column}.nav-menu{flex-direction:column;gap:10px;text-align:center}.hero{padding:50px 15px}.hero h1{font-size:1.5rem}}

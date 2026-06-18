@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Practical Handbook - 20 Practicals</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <!-- HEADER -->
+    <header class="header">
+        <div class="header-content">
+            <div class="logo">
+                <h1>📚 CSS Practical Handbook</h1>
+                <p>Master Modern CSS with 20 Real-World Practicals</p>
+            </div>
+            <nav class="nav-menu">
+                <button class="nav-btn" data-filter="all">All</button>
+                <button class="nav-btn" data-filter="beginner">Beginner</button>
+                <button class="nav-btn" data-filter="intermediate">Intermediate</button>
+                <button class="nav-btn" data-filter="advanced">Advanced</button>
+            </nav>
+        </div>
+    </header>
+
+    <!-- MAIN CONTENT -->
+    <main class="main-content">
+        <!-- BEGINNER SECTION -->
+        <section class="practicals-section" id="beginner-section">
+            <h2 class="section-title">🌱 Beginner Level</h2>
+            <div class="practicals-grid" id="beginner-grid">
+                <!-- Will be populated by JavaScript -->
+            </div>
+        </section>
+
+        <!-- INTERMEDIATE SECTION -->
+        <section class="practicals-section" id="intermediate-section">
+            <h2 class="section-title">🌿 Intermediate Level</h2>
+            <div class="practicals-grid" id="intermediate-grid">
+                <!-- Will be populated by JavaScript -->
+            </div>
+        </section>
+
+        <!-- ADVANCED SECTION -->
+        <section class="practicals-section" id="advanced-section">
+            <h2 class="section-title">🚀 Advanced Level</h2>
+            <div class="practicals-grid" id="advanced-grid">
+                <!-- Will be populated by JavaScript -->
+            </div>
+        </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <p>&copy; 2024 CSS Practical Handbook | Master Modern CSS3</p>
+        <p>Pure HTML5 + CSS3 | No Bootstrap | No JavaScript Dependencies*</p>
+        <p style="font-size: 0.85rem; margin-top: 10px;">*Landing page uses JavaScript for interactivity</p>
+    </footer>
+
+    <script>
+        // Data for all 20 practicals
+        const practicals = [
+            {
+                id: 1,
+                name: "Business Card Design",
+                description: "Professional business cards with colors, borders, shadows and hover effects",
+                topics: "Colors, Borders, Box Shadow, Padding",
+                difficulty: "beginner",
+                path: "Practical-01/index.html"
+            },
+            {
+                id: 2,
+                name: "Login Form Design",
+                description: "Modern login form with styled inputs, focus states and gradient buttons",
+                topics: "Box Model, Forms, Inputs, Gradients",
+                difficulty: "beginner",
+                path: "Practical-02/index.html"
+            },
+            {
+                id: 3,
+                name: "Registration Form",
+                description: "Multi-field registration form with CSS Grid layout and responsive design",
+                topics: "Grid, Forms, Responsive",
+                difficulty: "beginner",
+                path: "Practical-03/index.html"
+            },
+            {
+                id: 4,
+                name: "Hero Section",
+                description: "Full-viewport hero section with gradient backgrounds and centered content",
+                topics: "100vh Height, Flexbox, Gradients",
+                difficulty: "beginner",
+                path: "Practical-04/index.html"
+            },
+            {
+                id: 5,
+                name: "Pricing Cards",
+                description: "Three-tier pricing layout with featured card scaling and hover effects",
+                topics: "Grid, Transform, Box Shadow",
+                difficulty: "intermediate",
+                path: "Practical-05/index.html"
+            },
+            {
+                id: 6,
+                name: "Team Cards",
+                description: "Team member cards with circular profile images and hover animations",
+                topics: "Border Radius, Overflow, Cards",
+                difficulty: "beginner",
+                path: "Practical-06/index.html"
+            },
+            {
+                id: 7,
+                name: "Product Cards",
+                description: "E-commerce product cards with badges, prices and interactive effects",
+                topics: "Grid, Position, Badges",
+                difficulty: "intermediate",
+                path: "Practical-07/index.html"
+            },
+            {
+                id: 8,
+                name: "Property Cards",
+                description: "Real estate property listings with featured card scaling",
+                topics: "Grid, Transform, Cards",
+                difficulty: "intermediate",
+                path: "Practical-08/index.html"
+            },
+            {
+                id: 9,
+                name: "Navbar",
+                description: "Fixed navigation bar with responsive hamburger menu and smooth transitions",
+                topics: "Fixed Position, Z-index, Flex",
+                difficulty: "intermediate",
+                path: "Practical-09/index.html"
+            },
+            {
+                id: 10,
+                name: "Footer",
+                description: "Multi-column footer layout with Grid and Flexbox",
+                topics: "Grid, Flex, Multi-column",
+                difficulty: "beginner",
+                path: "Practical-10/index.html"
+            },
+            {
+                id: 11,
+                name: "Contact Section",
+                description: "Contact page with form and contact information in two-column layout",
+                topics: "Forms, Layout, Responsive",
+                difficulty: "beginner",
+                path: "Practical-11/index.html"
+            },
+            {
+                id: 12,
+                name: "Services Section",
+                description: "Services showcase with auto-fit grid and hover card animations",
+                topics: "Auto-fit Grid, Hover Effects",
+                difficulty: "intermediate",
+                path: "Practical-12/index.html"
+            },
+            {
+                id: 13,
+                name: "Gallery",
+                description: "Responsive image gallery with hover zoom effects",
+                topics: "Responsive Grid, Image Scaling",
+                difficulty: "intermediate",
+                path: "Practical-13/index.html"
+            },
+            {
+                id: 14,
+                name: "Testimonials",
+                description: "Customer testimonial cards with star ratings and author info",
+                topics: "Cards, Star Ratings, Flex",
+                difficulty: "beginner",
+                path: "Practical-14/index.html"
+            },
+            {
+                id: 15,
+                name: "Sidebar",
+                description: "Fixed sidebar dashboard layout with main content area",
+                topics: "Fixed Position, Layout",
+                difficulty: "intermediate",
+                path: "Practical-15/index.html"
+            },
+            {
+                id: 16,
+                name: "Dashboard Cards",
+                description: "Metric cards for displaying KPIs and analytics data",
+                topics: "Cards, Grid, Metrics",
+                difficulty: "intermediate",
+                path: "Practical-16/index.html"
+            },
+            {
+                id: 17,
+                name: "Table Design",
+                description: "Professional data table with styled headers and hover effects",
+                topics: "Table Styling, Hover Effects",
+                difficulty: "intermediate",
+                path: "Practical-17/index.html"
+            },
+            {
+                id: 18,
+                name: "Sticky Header",
+                description: "Navigation bar that remains fixed while scrolling page content",
+                topics: "Position Sticky, Navigation",
+                difficulty: "advanced",
+                path: "Practical-18/index.html"
+            },
+            {
+                id: 19,
+                name: "Floating Button",
+                description: "Floating action button with fixed positioning and hover animations",
+                topics: "Fixed Position, Z-index",
+                difficulty: "advanced",
+                path: "Practical-19/index.html"
+            },
+            {
+                id: 20,
+                name: "Portfolio Layout",
+                description: "Professional portfolio grid with project cards and hover overlays",
+                topics: "Responsive Grid, Hover Effects",
+                difficulty: "advanced",
+                path: "Practical-20/index.html"
+            }
+        ];
+
+        // Create practical cards
+        function createPracticalCard(practical) {
+            const card = document.createElement('div');
+            card.className = `practical-card ${practical.difficulty}`;
+            card.setAttribute('data-difficulty', practical.difficulty);
+            
+            card.innerHTML = `
+                <div class="card-header">
+                    <span class="practical-number">Practical ${practical.id}</span>
+                    <span class="difficulty-badge">${practical.difficulty.toUpperCase()}</span>
+                </div>
+                <div class="card-content">
+                    <h3>${practical.name}</h3>
+                    <p class="description">${practical.description}</p>
+                    <div class="topics">
+                        <strong>Topics:</strong> ${practical.topics}
+                    </div>
+                </div>
+                <div class="card-footer">
+                    <button class="view-btn" onclick="openPractical('${practical.path}')">
+                        Open Practical →
+                    </button>
+                </div>
+            `;
+            
+            return card;
+        }
+
+        // Populate grids on page load
+        function populateGrids() {
+            const beginnerGrid = document.getElementById('beginner-grid');
+            const intermediateGrid = document.getElementById('intermediate-grid');
+            const advancedGrid = document.getElementById('advanced-grid');
+
+            practicals.forEach(practical => {
+                const card = createPracticalCard(practical);
+                
+                if (practical.difficulty === 'beginner') {
+                    beginnerGrid.appendChild(card);
+                } else if (practical.difficulty === 'intermediate') {
+                    intermediateGrid.appendChild(card);
+                } else if (practical.difficulty === 'advanced') {
+                    advancedGrid.appendChild(card);
+                }
+            });
+        }
+
+        // Filter practicals
+        function filterPracticals(difficulty) {
+            const cards = document.querySelectorAll('.practical-card');
+            const buttons = document.querySelectorAll('.nav-btn');
+
+            // Update active button
+            buttons.forEach(btn => {
+                btn.classList.remove('active');
+                if (btn.getAttribute('data-filter') === difficulty) {
+                    btn.classList.add('active');
+                }
+            });
+
+            // Show/hide cards
+            cards.forEach(card => {
+                const cardDifficulty = card.getAttribute('data-difficulty');
+                
+                if (difficulty === 'all' || cardDifficulty === difficulty) {
+                    card.style.display = 'block';
+                    setTimeout(() => {
+                        card.classList.add('visible');
+                    }, 10);
+                } else {
+                    card.classList.remove('visible');
+                    setTimeout(() => {
+                        card.style.display = 'none';
+                    }, 300);
+                }
+            });
+
+            // Show/hide sections
+            const sections = document.querySelectorAll('.practicals-section');
+            sections.forEach(section => {
+                const visibleCards = section.querySelectorAll('.practical-card[style*="display: block"]');
+                section.style.display = visibleCards.length > 0 ? 'block' : 'none';
+            });
+        }
+
+        // Open practical in new tab
+        function openPractical(path) {
+            const fullPath = window.location.pathname.includes('index.html') 
+                ? window.location.pathname.replace('index.html', '') + path
+                : window.location.pathname + path;
+            
+            window.open(path, '_blank');
+        }
+
+        // Initialize
+        document.addEventListener('DOMContentLoaded', function() {
+            populateGrids();
+            
+            // Add filter button listeners
+            document.querySelectorAll('.nav-btn').forEach(btn => {
+                btn.addEventListener('click', function() {
+                    const filter = this.getAttribute('data-filter');
+                    filterPracticals(filter);
+                });
+            });
+
+            // Set "All" as active by default
+            document.querySelector('[data-filter="all"]').classList.add('active');
+
+            // Add scroll animation for cards
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('visible');
+                    }
+                });
+            }, { threshold: 0.1 });
+
+            document.querySelectorAll('.practical-card').forEach(card => {
+                observer.observe(card);
+            });
+        });
+    </script>
+</body>
+</html>

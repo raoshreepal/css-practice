@@ -1,0 +1,315 @@
+<!-- PRACTICAL 5: PRICING CARD DESIGN -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practical 5 - Pricing Cards</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header class="page-header">
+        <h1>Professional Pricing Cards</h1>
+        <p class="subtitle">Display Your Pricing Plans Beautifully</p>
+    </header>
+
+    <nav class="page-nav">
+        <ul class="nav-list">
+            <li><a href="#pricing-section">Pricing Examples</a></li>
+            <li><a href="#explanation">Learn CSS</a></li>
+            <li><a href="#interview">Questions</a></li>
+        </ul>
+    </nav>
+
+    <section id="pricing-section" class="main-section">
+        <h2>Pricing Plans Showcase</h2>
+        
+        <article class="pricing-container">
+            <!-- Basic Plan -->
+            <div class="pricing-card">
+                <div class="card-header">
+                    <h3 class="plan-name">Starter</h3>
+                    <p class="plan-badge">For Individuals</p>
+                </div>
+
+                <div class="card-price">
+                    <span class="currency">$</span>
+                    <span class="amount">29</span>
+                    <span class="period">/month</span>
+                </div>
+
+                <p class="price-description">Perfect to get started</p>
+
+                <div class="card-features">
+                    <ul class="features-list">
+                        <li class="feature-item">✓ Up to 10 projects</li>
+                        <li class="feature-item">✓ 1 GB storage</li>
+                        <li class="feature-item">✓ Email support</li>
+                        <li class="feature-item">✗ Advanced analytics</li>
+                        <li class="feature-item">✗ Priority support</li>
+                    </ul>
+                </div>
+
+                <button class="card-button">Get Started</button>
+            </div>
+
+            <!-- Professional Plan (Featured) -->
+            <div class="pricing-card featured">
+                <div class="featured-badge">Most Popular</div>
+                
+                <div class="card-header">
+                    <h3 class="plan-name">Professional</h3>
+                    <p class="plan-badge">For Teams</p>
+                </div>
+
+                <div class="card-price">
+                    <span class="currency">$</span>
+                    <span class="amount">79</span>
+                    <span class="period">/month</span>
+                </div>
+
+                <p class="price-description">Best for growing businesses</p>
+
+                <div class="card-features">
+                    <ul class="features-list">
+                        <li class="feature-item">✓ Unlimited projects</li>
+                        <li class="feature-item">✓ 100 GB storage</li>
+                        <li class="feature-item">✓ Priority email support</li>
+                        <li class="feature-item">✓ Advanced analytics</li>
+                        <li class="feature-item">✓ Team collaboration</li>
+                    </ul>
+                </div>
+
+                <button class="card-button featured-button">Subscribe Now</button>
+            </div>
+
+            <!-- Enterprise Plan -->
+            <div class="pricing-card">
+                <div class="card-header">
+                    <h3 class="plan-name">Enterprise</h3>
+                    <p class="plan-badge">For Enterprises</p>
+                </div>
+
+                <div class="card-price">
+                    <span class="currency">$</span>
+                    <span class="amount">199</span>
+                    <span class="period">/month</span>
+                </div>
+
+                <p class="price-description">Unlimited everything</p>
+
+                <div class="card-features">
+                    <ul class="features-list">
+                        <li class="feature-item">✓ Unlimited everything</li>
+                        <li class="feature-item">✓ Custom storage</li>
+                        <li class="feature-item">✓ 24/7 phone support</li>
+                        <li class="feature-item">✓ AI-powered analytics</li>
+                        <li class="feature-item">✓ Dedicated account manager</li>
+                    </ul>
+                </div>
+
+                <button class="card-button">Contact Sales</button>
+            </div>
+        </article>
+    </section>
+
+    <section id="explanation" class="explanation-section">
+        <h2>CSS Properties Explained</h2>
+        
+        <article class="explanation-content">
+            <div class="property-card">
+                <h3>1. Display Grid/Flex</h3>
+                <div class="property-detail">
+                    <p><strong>Purpose:</strong> Arranges pricing cards in rows automatically.</p>
+                    <p><strong>Syntax:</strong> display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));</p>
+                    <p><strong>Real Project Usage:</strong> Stripe, GitHub, Figma use grid for pricing.</p>
+                </div>
+            </div>
+
+            <div class="property-card">
+                <h3>2. Box Shadow</h3>
+                <div class="property-detail">
+                    <p><strong>Purpose:</strong> Creates elevation and depth for cards.</p>
+                    <p><strong>Syntax:</strong> box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);</p>
+                    <p><strong>Real Project Usage:</strong> All modern pricing pages use shadows.</p>
+                </div>
+            </div>
+
+            <div class="property-card">
+                <h3>3. Border Radius</h3>
+                <div class="property-detail">
+                    <p><strong>Purpose:</strong> Rounds corners of cards for modern look.</p>
+                    <p><strong>Syntax:</strong> border-radius: 12px;</p>
+                    <p><strong>Real Project Usage:</strong> Standard for all card-based designs.</p>
+                </div>
+            </div>
+
+            <div class="property-card">
+                <h3>4. Transform & Scale</h3>
+                <div class="property-detail">
+                    <p><strong>Purpose:</strong> Creates hover effects to highlight cards.</p>
+                    <p><strong>Syntax:</strong> transform: scale(1.05); translateY(-10px);</p>
+                    <p><strong>Real Project Usage:</strong> Interactive pricing pages use hover effects.</p>
+                </div>
+            </div>
+
+            <div class="property-card">
+                <h3>5. Positioning (Relative/Absolute)</h3>
+                <div class="property-detail">
+                    <p><strong>Purpose:</strong> Positions badge on card and featured indicator.</p>
+                    <p><strong>Syntax:</strong> position: absolute; top: -15px;</p>
+                    <p><strong>Real Project Usage:</strong> Badges and badges on pricing cards.</p>
+                </div>
+            </div>
+
+            <div class="property-card">
+                <h3>6. Background Gradient</h3>
+                <div class="property-detail">
+                    <p><strong>Purpose:</strong> Creates visual distinction for featured plan.</p>
+                    <p><strong>Syntax:</strong> background: linear-gradient(135deg, color1, color2);</p>
+                    <p><strong>Real Project Usage:</strong> Featured cards stand out with gradients.</p>
+                </div>
+            </div>
+
+            <div class="property-card">
+                <h3>7. Padding & Margin</h3>
+                <div class="property-detail">
+                    <p><strong>Purpose:</strong> Creates spacing inside and between cards.</p>
+                    <p><strong>Syntax:</strong> padding: 30px; margin: 20px;</p>
+                    <p><strong>Real Project Usage:</strong> Professional spacing for readability.</p>
+                </div>
+            </div>
+
+            <div class="property-card">
+                <h3>Best Practices for Pricing Pages</h3>
+                <div class="property-detail">
+                    <ul class="tips-list">
+                        <li>✅ Make featured plan visually distinct</li>
+                        <li>✅ Use consistent spacing between cards</li>
+                        <li>✅ Make CTA button obvious (contrast)</li>
+                        <li>✅ Show feature differences clearly</li>
+                        <li>✅ Use hover effects for interactivity</li>
+                        <li>❌ Don't crowd too many features</li>
+                        <li>❌ Don't hide pricing information</li>
+                    </ul>
+                </div>
+            </div>
+        </article>
+    </section>
+
+    <section id="interview" class="interview-section">
+        <h2>Interview Questions</h2>
+        
+        <article class="questions-container">
+            <div class="question-item">
+                <h4 class="question-number">Question 1</h4>
+                <p class="question-text">How do you create a responsive grid that shows 3 cards on desktop, 2 on tablet, 1 on mobile?</p>
+                <p class="question-hint">💡 Hint: Use grid-template-columns with auto-fit or auto-fill</p>
+            </div>
+
+            <div class="question-item">
+                <h4 class="question-number">Question 2</h4>
+                <p class="question-text">How do you position a "Most Popular" badge on the top of a card?</p>
+                <p class="question-hint">💡 Hint: Use position: absolute with negative top value</p>
+            </div>
+
+            <div class="question-item">
+                <h4 class="question-number">Question 3</h4>
+                <p class="question-text">What CSS creates a subtle lift effect on hover without changing layout?</p>
+                <p class="question-hint">💡 Hint: Use transform: translateY and transition</p>
+            </div>
+
+            <div class="question-item">
+                <h4 class="question-number">Question 4</h4>
+                <p class="question-text">How do you make one card appear "featured" or "highlighted"?</p>
+                <p class="question-hint">💡 Hint: Use different background, border, or shadow</p>
+            </div>
+
+            <div class="question-item">
+                <h4 class="question-number">Question 5</h4>
+                <p class="question-text">How do you align pricing sections (currency, amount, period) professionally?</p>
+                <p class="question-hint">💡 Hint: Use display: flex or inline-block with alignment</p>
+            </div>
+        </article>
+    </section>
+
+    <section class="exercise-section">
+        <h2>Student Exercise</h2>
+        
+        <article class="exercise-content">
+            <h3>Practice Task: Create a SaaS Pricing Page</h3>
+            <div class="exercise-box">
+                <p><strong>Objective:</strong> Design a 3-tier pricing page:</p>
+                
+                <div class="requirements-list">
+                    <h4>Requirements:</h4>
+                    <ul>
+                        <li>3 pricing cards: Basic, Pro (featured), Enterprise</li>
+                        <li>Each card shows: name, price, description, 5-6 features</li>
+                        <li>Featured card is visually distinct (larger, different color)</li>
+                        <li>Hover effects that lift cards slightly</li>
+                        <li>CTA buttons with proper contrast</li>
+                        <li>Responsive grid layout</li>
+                        <li>Feature list with checkmarks or X marks</li>
+                    </ul>
+                </div>
+
+                <div class="bonus-section">
+                    <h4>🌟 Bonus Challenges:</h4>
+                    <ul>
+                        <li>Add annual vs monthly pricing toggle</li>
+                        <li>Show price difference between plans</li>
+                        <li>Add a "Save 20%" badge for annual billing</li>
+                        <li>Create comparison table below cards</li>
+                        <li>Add testimonials with plan they're on</li>
+                    </ul>
+                </div>
+            </div>
+        </article>
+    </section>
+
+    <section class="real-world-section">
+        <h2>Real World Applications</h2>
+        
+        <article class="real-world-content">
+            <div class="use-case">
+                <h3>1. SaaS Pricing (Stripe, Figma)</h3>
+                <p>Stripe and Figma use tiered pricing cards</p>
+            </div>
+
+            <div class="use-case">
+                <h3>2. Cloud Services (AWS, Google Cloud)</h3>
+                <p>Cloud platforms display pricing with multiple tiers</p>
+            </div>
+
+            <div class="use-case">
+                <h3>3. Hosting Providers (Netlify, Vercel)</h3>
+                <p>Web hosting uses pricing cards extensively</p>
+            </div>
+
+            <div class="use-case">
+                <h3>4. Subscription Services (Netflix, Spotify)</h3>
+                <p>Streaming services showcase plans with pricing</p>
+            </div>
+
+            <div class="use-case">
+                <h3>5. E-learning Platforms (Udemy, Coursera)</h3>
+                <p>Learning platforms show course pricing</p>
+            </div>
+
+            <div class="use-case">
+                <h3>6. CRM & Business Tools (Salesforce)</h3>
+                <p>Enterprise software displays pricing tiers</p>
+            </div>
+        </article>
+    </section>
+
+    <footer class="page-footer">
+        <p>&copy; 2024 CSS Practical Handbook. All rights reserved.</p>
+        <p>Practical 5: Pricing Cards | Topics: Box Shadow, Border Radius, Transform, Display Grid</p>
+    </footer>
+</body>
+
+</html>

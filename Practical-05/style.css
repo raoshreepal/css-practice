@@ -1,0 +1,561 @@
+/* PRACTICAL 5: PRICING CARDS - CSS */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 16px;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f5f7fa;
+    color: #333;
+}
+
+.page-header {
+    background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+    color: white;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.page-header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+.subtitle {
+    font-size: 1.1rem;
+    color: #e0f7ff;
+}
+
+.page-nav {
+    background-color: #0077be;
+    padding: 15px 0;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.nav-list {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.nav-list a {
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    padding: 8px 15px;
+    transition: 0.3s ease;
+}
+
+.nav-list a:hover {
+    color: #00f2fe;
+}
+
+.main-section {
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+.main-section h2 {
+    font-size: 2rem;
+    color: #0077be;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+/* ========== PRICING CONTAINER & CARDS ========== */
+
+.pricing-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 30px;
+    margin-bottom: 40px;
+}
+
+.pricing-card {
+    /* Layout */
+    display: flex;
+    flex-direction: column;
+    
+    /* Positioning */
+    position: relative;
+    
+    /* Styling */
+    background-color: white;
+    border: 1px solid #e0e0e0;
+    border-radius: 12px;
+    padding: 30px;
+    
+    /* Shadow for depth */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+    
+    /* Transition for hover effects */
+    transition: all 0.3s ease;
+}
+
+.pricing-card:hover {
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.12);
+    transform: translateY(-8px);
+}
+
+/* Featured (Most Popular) Card */
+
+.pricing-card.featured {
+    /* Scale up the featured card */
+    transform: scale(1.05);
+    
+    /* Use gradient background */
+    background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+    color: white;
+    
+    /* Add border */
+    border: none;
+    
+    /* Shadow enhancement */
+    box-shadow: 0 8px 30px rgba(79, 172, 254, 0.3);
+}
+
+.pricing-card.featured:hover {
+    transform: scale(1.05) translateY(-10px);
+    box-shadow: 0 12px 40px rgba(79, 172, 254, 0.4);
+}
+
+.pricing-card.featured .plan-name,
+.pricing-card.featured .plan-badge,
+.pricing-card.featured .price-description,
+.pricing-card.featured .feature-item,
+.pricing-card.featured .card-button {
+    color: white;
+}
+
+.pricing-card.featured .feature-item {
+    color: rgba(255, 255, 255, 0.9);
+}
+
+/* Featured Badge */
+
+.featured-badge {
+    position: absolute;
+    top: -12px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #ff6b6b;
+    color: white;
+    padding: 6px 16px;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+/* ========== CARD HEADER ========== */
+
+.card-header {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.plan-name {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.pricing-card.featured .plan-name {
+    color: white;
+}
+
+.plan-badge {
+    font-size: 0.9rem;
+    color: #999;
+    font-weight: 400;
+}
+
+/* ========== PRICING DISPLAY ========== */
+
+.card-price {
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+    margin: 25px 0 15px;
+}
+
+.currency {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-right: 5px;
+}
+
+.amount {
+    font-size: 3.5rem;
+    font-weight: 700;
+    color: #0077be;
+}
+
+.pricing-card.featured .amount {
+    color: white;
+}
+
+.period {
+    font-size: 1rem;
+    color: #999;
+    margin-left: 8px;
+}
+
+.pricing-card.featured .period {
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.price-description {
+    text-align: center;
+    color: #666;
+    font-size: 0.95rem;
+    margin-bottom: 25px;
+}
+
+/* ========== FEATURES LIST ========== */
+
+.card-features {
+    flex: 1;
+    margin-bottom: 25px;
+}
+
+.features-list {
+    list-style: none;
+}
+
+.feature-item {
+    padding: 12px 0;
+    color: #555;
+    font-size: 0.95rem;
+    border-bottom: 1px solid #f0f0f0;
+    display: flex;
+    align-items: center;
+}
+
+.pricing-card.featured .feature-item {
+    border-bottom-color: rgba(255, 255, 255, 0.2);
+}
+
+/* ========== CARD BUTTON ========== */
+
+.card-button {
+    /* Dimensions */
+    padding: 14px 30px;
+    
+    /* Styling */
+    background-color: #0077be;
+    color: white;
+    border: 2px solid #0077be;
+    border-radius: 6px;
+    
+    /* Typography */
+    font-size: 1rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    
+    /* Interaction */
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.card-button:hover {
+    background-color: transparent;
+    color: #0077be;
+}
+
+.featured-button {
+    background-color: white;
+    color: #0077be;
+    border-color: white;
+}
+
+.featured-button:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    color: white;
+    border-color: white;
+}
+
+/* ========== EXPLANATION SECTION ========== */
+
+.explanation-section {
+    background-color: white;
+    padding: 40px 20px;
+    margin: 40px 0;
+    border-top: 3px solid #0077be;
+}
+
+.explanation-section h2 {
+    font-size: 2rem;
+    color: #0077be;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.explanation-content {
+    max-width: 1000px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+    gap: 20px;
+}
+
+.property-card {
+    background-color: #f9f9f9;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.property-card h3 {
+    color: #0077be;
+    margin-bottom: 15px;
+    font-size: 1.2rem;
+}
+
+.property-detail p {
+    margin-bottom: 12px;
+    font-size: 0.95rem;
+    color: #555;
+    line-height: 1.6;
+}
+
+.property-detail strong {
+    color: #0077be;
+}
+
+.tips-list {
+    list-style-position: inside;
+    margin-top: 10px;
+}
+
+.tips-list li {
+    margin-bottom: 8px;
+    color: #555;
+}
+
+/* ========== INTERVIEW SECTION ========== */
+
+.interview-section {
+    background-color: #f5f7fa;
+    padding: 40px 20px;
+    margin: 40px 0;
+}
+
+.interview-section h2 {
+    font-size: 2rem;
+    color: #0077be;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.questions-container {
+    max-width: 900px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: 20px;
+}
+
+.question-item {
+    background-color: white;
+    border-left: 4px solid #0077be;
+    padding: 20px;
+    border-radius: 4px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.question-number {
+    color: #0077be;
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+}
+
+.question-text {
+    color: #333;
+    margin-bottom: 12px;
+    font-weight: 500;
+}
+
+.question-hint {
+    color: #666;
+    font-size: 0.9rem;
+    font-style: italic;
+}
+
+/* ========== EXERCISE SECTION ========== */
+
+.exercise-section {
+    background-color: white;
+    padding: 40px 20px;
+    margin: 40px 0;
+    border-top: 3px solid #0077be;
+}
+
+.exercise-section h2 {
+    font-size: 2rem;
+    color: #0077be;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.exercise-content {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.exercise-content h3 {
+    color: #0077be;
+    margin-bottom: 15px;
+    font-size: 1.3rem;
+}
+
+.exercise-box {
+    background-color: #f9f9f9;
+    border: 2px solid #0077be;
+    border-radius: 8px;
+    padding: 25px;
+}
+
+.requirements-list,
+.bonus-section {
+    margin-bottom: 25px;
+}
+
+.requirements-list h4,
+.bonus-section h4 {
+    color: #0077be;
+    margin-bottom: 12px;
+    font-size: 1.1rem;
+}
+
+.requirements-list ul,
+.bonus-section ul {
+    list-style-position: inside;
+}
+
+.requirements-list li,
+.bonus-section li {
+    margin-bottom: 8px;
+    color: #555;
+}
+
+/* ========== REAL WORLD SECTION ========== */
+
+.real-world-section {
+    background-color: #f5f7fa;
+    padding: 40px 20px;
+    margin: 40px 0;
+}
+
+.real-world-section h2 {
+    font-size: 2rem;
+    color: #0077be;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.real-world-content {
+    max-width: 900px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.use-case {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.use-case h3 {
+    color: #0077be;
+    margin-bottom: 12px;
+    font-size: 1.1rem;
+}
+
+.use-case p {
+    color: #555;
+}
+
+/* ========== FOOTER ========== */
+
+.page-footer {
+    background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+    color: white;
+    padding: 30px 20px;
+    text-align: center;
+    margin-top: 40px;
+}
+
+.page-footer p {
+    margin-bottom: 10px;
+    font-size: 0.95rem;
+}
+
+.page-footer p:last-child {
+    margin-bottom: 0;
+    font-size: 0.9rem;
+    color: #e0f7ff;
+}
+
+/* ========== RESPONSIVE ========== */
+
+@media (max-width: 768px) {
+    .pricing-card.featured {
+        transform: scale(1);
+    }
+    
+    .pricing-card.featured:hover {
+        transform: translateY(-8px);
+    }
+    
+    .explanation-content,
+    .questions-container,
+    .real-world-content {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        font-size: 14px;
+    }
+    
+    .page-header {
+        padding: 25px 15px;
+    }
+    
+    .main-section {
+        padding: 0 10px;
+    }
+    
+    .pricing-card {
+        padding: 20px;
+    }
+    
+    .amount {
+        font-size: 2.5rem;
+    }
+    
+    .exercise-box {
+        padding: 15px;
+    }
+}

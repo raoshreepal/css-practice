@@ -1,0 +1,372 @@
+<!-- 
+    PRACTICAL 1: BUSINESS CARD DESIGN
+    Topics: CSS Colors, Borders, Padding, Box Shadow, Margin
+    Difficulty: Beginner
+    
+    This practical demonstrates how to create a professional business card
+    using semantic HTML5 and pure CSS styling without any frameworks.
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practical 1 - Business Card Design</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Header Section -->
+    <header class="page-header">
+        <h1>Professional Business Card Design</h1>
+        <p class="subtitle">A Practical Example Using Pure CSS</p>
+    </header>
+
+    <!-- Navigation Section -->
+    <nav class="page-nav">
+        <ul class="nav-list">
+            <li><a href="#card-section">Business Card</a></li>
+            <li><a href="#explanation">Learn CSS</a></li>
+            <li><a href="#interview">Questions</a></li>
+        </ul>
+    </nav>
+
+    <!-- Main Content Section -->
+    <section id="card-section" class="main-section">
+        <h2>Business Card Example</h2>
+        
+        <!-- Article containing the business card -->
+        <article class="card-container">
+            <!-- Business Card -->
+            <div class="business-card">
+                <!-- Card Header with company name -->
+                <div class="card-header">
+                    <h3 class="company-name">TechCorp Solutions</h3>
+                    <p class="tagline">Innovating Your Future</p>
+                </div>
+
+                <!-- Card Body with contact person details -->
+                <div class="card-body">
+                    <div class="contact-info">
+                        <h4 class="person-name">John Smith</h4>
+                        <p class="person-title">Senior Software Engineer</p>
+                    </div>
+
+                    <!-- Contact details section -->
+                    <div class="contact-details">
+                        <p class="detail-item">
+                            <span class="detail-label">Email:</span>
+                            <span class="detail-value">john.smith@techcorp.com</span>
+                        </p>
+                        <p class="detail-item">
+                            <span class="detail-label">Phone:</span>
+                            <span class="detail-value">+1 (555) 123-4567</span>
+                        </p>
+                        <p class="detail-item">
+                            <span class="detail-label">Website:</span>
+                            <span class="detail-value">www.techcorp.com</span>
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Card Footer with company info -->
+                <div class="card-footer">
+                    <p class="address">123 Tech Street, Silicon Valley, CA 94025</p>
+                </div>
+            </div>
+
+            <!-- Duplicate Card for visual demonstration -->
+            <div class="business-card">
+                <div class="card-header">
+                    <h3 class="company-name">TechCorp Solutions</h3>
+                    <p class="tagline">Innovating Your Future</p>
+                </div>
+
+                <div class="card-body">
+                    <div class="contact-info">
+                        <h4 class="person-name">Sarah Johnson</h4>
+                        <p class="person-title">Product Manager</p>
+                    </div>
+
+                    <div class="contact-details">
+                        <p class="detail-item">
+                            <span class="detail-label">Email:</span>
+                            <span class="detail-value">sarah.johnson@techcorp.com</span>
+                        </p>
+                        <p class="detail-item">
+                            <span class="detail-label">Phone:</span>
+                            <span class="detail-value">+1 (555) 987-6543</span>
+                        </p>
+                        <p class="detail-item">
+                            <span class="detail-label">Website:</span>
+                            <span class="detail-value">www.techcorp.com</span>
+                        </p>
+                    </div>
+                </div>
+
+                <div class="card-footer">
+                    <p class="address">123 Tech Street, Silicon Valley, CA 94025</p>
+                </div>
+            </div>
+        </article>
+    </section>
+
+    <!-- Explanation Section -->
+    <section id="explanation" class="explanation-section">
+        <h2>CSS Properties Explained</h2>
+        
+        <article class="explanation-content">
+            <div class="property-card">
+                <h3>1. Background Color</h3>
+                <div class="property-detail">
+                    <p><strong>Purpose:</strong> Sets the background color of elements to create visual hierarchy and make content stand out.</p>
+                    <p><strong>Syntax:</strong> background-color: value;</p>
+                    <p><strong>Example Used:</strong> background-color: #ffffff; (white background for card)</p>
+                    <p><strong>Real Project Usage:</strong> Used in all professional websites like Amazon, LinkedIn to create card backgrounds and sections.</p>
+                </div>
+            </div>
+
+            <div class="property-card">
+                <h3>2. Color (Text Color)</h3>
+                <div class="property-detail">
+                    <p><strong>Purpose:</strong> Defines the color of text content for readability and visual appeal.</p>
+                    <p><strong>Syntax:</strong> color: value;</p>
+                    <p><strong>Example Used:</strong> color: #333333; (dark gray for body text)</p>
+                    <p><strong>Real Project Usage:</strong> Every website uses this to make text readable. Amazon uses dark colors for product descriptions.</p>
+                </div>
+            </div>
+
+            <div class="property-card">
+                <h3>3. Border</h3>
+                <div class="property-detail">
+                    <p><strong>Purpose:</strong> Creates a border around elements to define boundaries and add visual structure.</p>
+                    <p><strong>Syntax:</strong> border: width style color;</p>
+                    <p><strong>Example Used:</strong> border: 2px solid #e0e0e0; (light gray border)</p>
+                    <p><strong>Real Project Usage:</strong> Used in table designs, card layouts, and form inputs on all major websites.</p>
+                </div>
+            </div>
+
+            <div class="property-card">
+                <h3>4. Padding</h3>
+                <div class="property-detail">
+                    <p><strong>Purpose:</strong> Creates space inside an element between content and border for better visual breathing room.</p>
+                    <p><strong>Syntax:</strong> padding: value; or padding: top right bottom left;</p>
+                    <p><strong>Example Used:</strong> padding: 20px; (20 pixels space on all sides)</p>
+                    <p><strong>Real Project Usage:</strong> Used in cards, buttons, and containers on Netflix, Flipkart to make layouts breathable.</p>
+                </div>
+            </div>
+
+            <div class="property-card">
+                <h3>5. Margin</h3>
+                <div class="property-detail">
+                    <p><strong>Purpose:</strong> Creates space outside an element between it and other elements for separation.</p>
+                    <p><strong>Syntax:</strong> margin: value; or margin: top right bottom left;</p>
+                    <p><strong>Example Used:</strong> margin: 20px; (20 pixels space outside on all sides)</p>
+                    <p><strong>Real Project Usage:</strong> Used between product cards on Amazon, between posts on Facebook, between items on Zomato.</p>
+                </div>
+            </div>
+
+            <div class="property-card">
+                <h3>6. Box Shadow</h3>
+                <div class="property-detail">
+                    <p><strong>Purpose:</strong> Adds shadow effect to create depth and make elements appear elevated from the page.</p>
+                    <p><strong>Syntax:</strong> box-shadow: horizontal vertical blur color;</p>
+                    <p><strong>Example Used:</strong> box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);</p>
+                    <p><strong>Real Project Usage:</strong> Cards on Netflix, Google Play Store, Flipkart use box-shadow for elevation effect.</p>
+                </div>
+            </div>
+
+            <div class="property-card">
+                <h3>7. Width</h3>
+                <div class="property-detail">
+                    <p><strong>Purpose:</strong> Sets the width of an element to control its horizontal size.</p>
+                    <p><strong>Syntax:</strong> width: value;</p>
+                    <p><strong>Example Used:</strong> width: 350px; (fixed width for business card)</p>
+                    <p><strong>Real Project Usage:</strong> Product cards on Amazon are 280px wide, profile cards on LinkedIn are 360px wide.</p>
+                </div>
+            </div>
+
+            <div class="property-card">
+                <h3>8. Height</h3>
+                <div class="property-detail">
+                    <p><strong>Purpose:</strong> Sets the height of an element to control its vertical size.</p>
+                    <p><strong>Syntax:</strong> height: value;</p>
+                    <p><strong>Example Used:</strong> height: auto; (automatic height based on content)</p>
+                    <p><strong>Real Project Usage:</strong> Hero sections on company websites often have fixed heights like 400px or 600px.</p>
+                </div>
+            </div>
+
+            <div class="property-card">
+                <h3>Performance & Best Practices</h3>
+                <div class="property-detail">
+                    <p><strong>Performance Tips:</strong></p>
+                    <ul class="tips-list">
+                        <li>Use shorthand properties (padding: 10px) instead of individual properties</li>
+                        <li>Avoid heavy box-shadows; use minimal blur radius for better performance</li>
+                        <li>Use CSS variables for colors used repeatedly</li>
+                        <li>Minimize the use of complex gradients</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="property-card">
+                <h3>Common Mistakes to Avoid</h3>
+                <div class="property-detail">
+                    <p><strong>Mistakes:</strong></p>
+                    <ul class="mistakes-list">
+                        <li>❌ Using too many colors in one design (more than 5-6)</li>
+                        <li>❌ Not using box-shadow for depth, making design look flat</li>
+                        <li>❌ Inconsistent padding/margin across similar elements</li>
+                        <li>❌ Using fixed widths that don't work on mobile devices</li>
+                        <li>✅ Use consistent spacing throughout the design</li>
+                        <li>✅ Use a color palette with maximum 3 primary colors</li>
+                    </ul>
+                </div>
+            </div>
+        </article>
+    </section>
+
+    <!-- Interview Questions Section -->
+    <section id="interview" class="interview-section">
+        <h2>Interview Questions</h2>
+        
+        <article class="questions-container">
+            <div class="question-item">
+                <h4 class="question-number">Question 1</h4>
+                <p class="question-text">What is the difference between padding and margin? Give a real-world example where you would use each.</p>
+                <p class="question-hint">💡 Hint: Think about the box model - inside vs outside spacing</p>
+            </div>
+
+            <div class="question-item">
+                <h4 class="question-number">Question 2</h4>
+                <p class="question-text">How would you create a business card that works well on both desktop and mobile devices? What CSS property is essential?</p>
+                <p class="question-hint">💡 Hint: Consider using max-width and responsive units</p>
+            </div>
+
+            <div class="question-item">
+                <h4 class="question-number">Question 3</h4>
+                <p class="question-text">Explain box-shadow syntax: 0 4px 12px rgba(0, 0, 0, 0.1). What does each value mean?</p>
+                <p class="question-hint">💡 Hint: Think about horizontal offset, vertical offset, blur, and color</p>
+            </div>
+
+            <div class="question-item">
+                <h4 class="question-number">Question 4</h4>
+                <p class="question-text">If you need to apply padding of 10px top, 20px right, 10px bottom, 20px left, how would you write it in one line?</p>
+                <p class="question-hint">💡 Hint: Use the 4-value shorthand notation</p>
+            </div>
+
+            <div class="question-item">
+                <h4 class="question-number">Question 5</h4>
+                <p class="question-text">Why is using semantic HTML tags like <article>, <section>, and <header> important alongside CSS styling?</p>
+                <p class="question-hint">💡 Hint: Think about SEO, accessibility, and code maintainability</p>
+            </div>
+        </article>
+    </section>
+
+    <!-- Student Exercise Section -->
+    <section class="exercise-section">
+        <h2>Student Exercise</h2>
+        
+        <article class="exercise-content">
+            <h3>Practice Task: Create Your Own Business Card</h3>
+            <div class="exercise-box">
+                <p><strong>Objective:</strong> Create a business card for yourself or a made-up company with the following requirements:</p>
+                
+                <div class="requirements-list">
+                    <h4>Requirements:</h4>
+                    <ul>
+                        <li>Width: 320px (or use max-width: 320px for responsiveness)</li>
+                        <li>Use at least 3 different colors in your design</li>
+                        <li>Include a box-shadow to create depth</li>
+                        <li>Add proper padding to all sections (minimum 15px)</li>
+                        <li>Use a professional font (system fonts or Google Fonts)</li>
+                        <li>Include: Company name, Your name, Your title, Email, Phone, Address</li>
+                        <li>Add a border to make the card visually distinct</li>
+                        <li>Use semantic HTML tags (header, section, footer, article)</li>
+                    </ul>
+                </div>
+
+                <div class="bonus-section">
+                    <h4>🌟 Bonus Challenges:</h4>
+                    <ul>
+                        <li>Create hover effects (the card lifts when you hover over it)</li>
+                        <li>Make two different designs and display them side by side</li>
+                        <li>Add a subtle background color to make certain text stand out</li>
+                        <li>Create a responsive design that works on mobile too</li>
+                        <li>Use CSS variables for colors to make it easy to change the theme</li>
+                    </ul>
+                </div>
+
+                <div class="expected-output">
+                    <h4>Expected Output:</h4>
+                    <p>A clean, professional-looking business card with:</p>
+                    <ul>
+                        <li>Clear visual hierarchy (company > person > details)</li>
+                        <li>Professional spacing and alignment</li>
+                        <li>Subtle shadow for depth</li>
+                        <li>Color scheme that matches a professional brand</li>
+                        <li>All information clearly visible and organized</li>
+                    </ul>
+                </div>
+            </div>
+        </article>
+    </section>
+
+    <!-- Real World Uses Section -->
+    <section class="real-world-section">
+        <h2>Real World Applications</h2>
+        
+        <article class="real-world-content">
+            <div class="use-case">
+                <h3>1. Amazon Product Cards</h3>
+                <p>Amazon uses similar styling techniques for their product cards. Each product card has:</p>
+                <ul>
+                    <li>Subtle box-shadow to create elevation</li>
+                    <li>Padding inside to separate content from edges</li>
+                    <li>Margin between cards to create spacing</li>
+                    <li>Border or subtle background to define boundaries</li>
+                </ul>
+            </div>
+
+            <div class="use-case">
+                <h3>2. LinkedIn Profile Cards</h3>
+                <p>LinkedIn uses card layouts similar to our business card for displaying user profiles and recommendations. They use:</p>
+                <ul>
+                    <li>Professional color schemes (white backgrounds with dark text)</li>
+                    <li>Proper padding for breathing room</li>
+                    <li>Box-shadow for visual separation</li>
+                    <li>Typography hierarchy with different font sizes</li>
+                </ul>
+            </div>
+
+            <div class="use-case">
+                <h3>3. CRM Dashboard</h3>
+                <p>CRM systems like Salesforce use card layouts to display customer information similar to our business card design.</p>
+            </div>
+
+            <div class="use-case">
+                <h3>4. Hospital Management Systems</h3>
+                <p>Hospital websites display patient information cards using similar layout principles.</p>
+            </div>
+
+            <div class="use-case">
+                <h3>5. School ERP Systems</h3>
+                <p>Student information cards in school management systems follow the same design patterns.</p>
+            </div>
+
+            <div class="use-case">
+                <h3>6. Property Listing Websites</h3>
+                <p>Real estate websites display property cards with owner information using this design approach.</p>
+            </div>
+        </article>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="page-footer">
+        <p>&copy; 2024 CSS Practical Handbook. All rights reserved.</p>
+        <p>Practical 1: Business Card Design | Topics: Colors, Borders, Padding, Box Shadow, Margin</p>
+    </footer>
+</body>
+
+</html>
